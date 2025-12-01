@@ -267,7 +267,7 @@ footer {
 .billy-th {
   border: 1px solid #dddddd;
   text-align: center;
-  padding: 8px;
+  padding: 0.9;
   transition: text-shadow 300ms, color 300ms;
   cursor: default;
 }
