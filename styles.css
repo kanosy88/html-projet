@@ -2,25 +2,39 @@
 
 body {
   font-family: "Inter", sans-serif;
-  font-weight: 100;
+  font-weight: 200;
   margin: 0;
   padding: 0;
   background-color: black;
   color: white;
 }
+
 /***************************************** HEADER ******************************************/
 .header {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .header-btn {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.9);
-  border: none;
   color: white;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 75%
+  );
   font-size: 28px;
   cursor: pointer;
   margin: 0px 5px;
@@ -29,6 +43,25 @@ body {
   min-width: 103px;
   text-align: center;
   overflow: hidden;
+  border-color: rgba(255, 255, 255, 0.609);
+  border-width: 1px;
+  border-style: solid;
+  transition: color 600ms, border-color 600ms;
+}
+
+.header-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 600ms ease;
+  z-index: 0;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
 }
 
 .maroc::before {
@@ -55,27 +88,13 @@ body {
   background-image: url("/images/italie/italie-flag.png");
 }
 
-.header-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  transition: opacity 600ms ease;
-  z-index: 0;
-  border-radius: 5px;
-  background-size: cover;
-  background-position: center;
-}
-
 .header-btn:hover::before {
   opacity: 0.5;
 }
 
 .header-btn:hover {
   color: black;
+  border-color: black;
 }
 
 .header-btn p {
@@ -89,6 +108,50 @@ body {
 /***************************************** LUCAS'S SECTION ******************************************/
 
 /***************************************** BILLY'S SECTION ******************************************/
+.billy-content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.billy-landing {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  min-height: 100vw;
+}
+
+.billy-landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/china/china-wall.jpg");
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+}
+
+.billy-title {
+  font-size: 200px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  cursor: default;
+  color: white;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+  transition: opacity 600ms, background-image 600ms;
+}
+
+.billy-description {
+  font-size: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
 /***************************************** ADAM'S SECTION ******************************************/
 
