@@ -131,6 +131,9 @@ footer {
 /***************************************** LUCAS'S SECTION ******************************************/
 
 /***************************************** BILLY'S SECTION ******************************************/
+
+/* content */
+
 .billy-content {
   display: flex;
   flex-direction: column;
@@ -139,14 +142,28 @@ footer {
   scroll-snap-type: y proximity;
 }
 
+.billy-content::before {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: 10;
+  filter: brightness(0.4);
+}
+
+/* page */
+
 .billy-page {
   min-height: 100vh;
   scroll-snap-align: start;
-}
-
-.billy-page-no-scroll {
-  min-height: 100vh;
-  scroll-snap-align: none;
+  padding: 0 100px;
 }
 
 .billy-landing {
@@ -156,6 +173,7 @@ footer {
   text-align: center;
   font-size: 40px;
   scroll-snap-align: start;
+  padding: 0;
 }
 
 .billy-landing::before {
@@ -173,6 +191,8 @@ footer {
   filter: brightness(0.4);
 }
 
+/* title & subtitle */
+
 .billy-title {
   font-size: 200px;
   font-weight: 900;
@@ -181,8 +201,20 @@ footer {
   cursor: default;
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
-  transition: opacity 600ms, background-image 600ms;
 }
+
+.billy-subtitle {
+  text-align: center;
+  font-size: 100px;
+  opacity: 0.5;
+  font-weight: 900;
+  margin-top: 120px;
+  margin-bottom: 50px;
+  cursor: default;
+  color: white;
+}
+
+/* citation */
 
 .citation-container {
   display: flex;
@@ -222,6 +254,44 @@ footer {
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
+}
+
+/* table */
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  transition: text-shadow 300ms, color 300ms;
+  cursor: default;
+}
+
+th {
+  border: none;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+td {
+  color: rgba(255, 255, 255, 0.827);
+}
+
+td:hover {
+  text-shadow: 0px 0px 25px rgb(255, 255, 255), 0px 0px 25px rgb(255, 255, 255),
+    0px 0px 100px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+}
+
+tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 /***************************************** ADAM'S SECTION ******************************************/
