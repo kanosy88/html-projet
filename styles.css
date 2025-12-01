@@ -203,6 +203,75 @@ p {
 
 /***************************************** ADAM'S SECTION ******************************************/
 
+.Adam_Content {
+  display: flex;
+  flex-direction: column;
+  min-height: auto;
+}
+.Adam_Landing {
+ display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 40px;
+  min-height: 170vh;
+  position: relative;
+}
+
+.Adam_Landing::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/maroc/desert.jpg");
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+  pointer-events: none;
+}
+
+.Adam_Title {
+  font-size: 200px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  cursor: default;
+  color: rgb(173, 62, 10);
+  text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
+  transition: opacity 600ms, background-image 600ms;
+}
+
+.Adam_Page2::before {
+  content: "";
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/maroc/desert.jpg");
+  background-size: 100%;
+  background-position: center;
+  z-index: -1;
+  filter: brightness(0.5);
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Adam_Title2 {
+  font-size: 200px;
+  font-weight: 900;
+  margin-bottom: 20px;
+  opacity: 0.5;
+  cursor: default;
+  color: rgb(173, 62, 10);
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.849);
+  transition: opacity 600ms, background-image 600ms;
+}
+
 /***************************************** AARON'S SECTION ******************************************/
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
