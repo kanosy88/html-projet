@@ -70,6 +70,8 @@ body {
 
 .chine::before {
   background-image: url("images/china/china-button.jpg");
+  background-size: 100%;
+  background-position: 0px 0px;
 }
 
 .palestine::before {
@@ -82,6 +84,8 @@ body {
 
 .congo::before {
   background-image: url("images/congo/congo-flag.png");
+  background-size: 100%;
+  background-position: 0px -3px;
 }
 
 .italie::before {
@@ -209,7 +213,7 @@ p {
   min-height: auto;
 }
 .Adam_Landing {
- display: flex;
+  display: flex;
   justify-content: center;
   text-align: center;
   font-size: 40px;
