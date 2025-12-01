@@ -7,8 +7,6 @@ body {
   padding: 0;
   background-color: black;
   color: white;
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth; /* optionnel mais agréable */
 }
 
 /***************************************** HEADER ******************************************/
