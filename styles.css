@@ -128,7 +128,7 @@ p {
   flex-direction: column;
   height: 100vh;
   overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 }
 
 .billy-page {
