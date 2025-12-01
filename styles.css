@@ -225,6 +225,7 @@ footer {
   text-align: start;
   cursor: pointer;
   margin: 0 60px;
+  gap: 20px;
 }
 
 .citation {
@@ -233,7 +234,6 @@ footer {
   justify-content: space-between;
   opacity: 0.5;
   max-width: 500px;
-  margin: 0 25px;
   border-left: 2px solid white;
   padding-left: 10px;
   transition: opacity 300ms, transform 300ms, background-color 1s, box-shadow 1s;
