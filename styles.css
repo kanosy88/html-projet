@@ -586,6 +586,15 @@ label:hover {
   border: 2px solid;
   margin: auto;
   background-color: rgb(163, 155, 155);
+  border-collapse: collapse;
+}
+.Aaron-th,
+.Aaron-td {
+  border: 1px solid;
+  border-color: white;
+}
+.Aaron-th {
+  border: none;
 }
 
 .Container-history-aaron {
@@ -602,6 +611,13 @@ label:hover {
 .Aaron-history {
   text-align: center;
   width: 300px;
+}
+.Aaron-list {
+  text-align: center;
+  background-color: rgb(163, 155, 155);
+  border-radius: 15px;
+  width: 70%;
+  margin: auto;
 }
 
 .Aaron-forms {
