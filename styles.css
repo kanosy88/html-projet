@@ -450,6 +450,12 @@ label:hover {
   text-align: justify;
 }
 
+.tab-content-link {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: underline;
+  transition: transform 300ms;
+}
+
 /***************************************** ADAM'S SECTION ******************************************/
 
 .Adam_Content {
