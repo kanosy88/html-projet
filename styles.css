@@ -377,15 +377,15 @@ footer {
 
 .Adam_Landing::before {
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 85%;
+  height: 145%;
   background-image: url("images/maroc/desert.jpg");
   background-size: 100%;
   background-position: center;
-  filter: brightness(0.5);
+  filter: brightness(0.65);
 }
 
 .Adam_Title {
@@ -393,26 +393,30 @@ footer {
   font-size: 180px;
   font-weight: 900;
   margin-top: 80px;
-  opacity: 0.5;
-  color: rgb(173, 62, 10);
+  opacity: 0.72;
+  color: rgb(172, 105, 10);
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
   transition: opacity 600ms, background-image 600ms;
 }
 
-.Adam_Page2::before {
-  content: "";
-  position: static;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("images/maroc/desert.jpg");
-  background-size: 100%;
-  background-position: center;
-  filter: brightness(0.5);
-  pointer-events: none;
-  display: flex;
-  justify-content: center;
+.Adam_LearnMore {
+  margin-top: 70px;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  position: relative;
+  opacity: 0.65;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.702);
+
+  display: inline-block;
+  padding: 20px 40px 20px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 .Adam_Description {
@@ -420,7 +424,22 @@ footer {
   font-size: 60px;
   color: white;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.65;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.702);
+
+  display: inline-block;
+  padding: 1px 300px 200px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.Adam_DescriptionText {
+  color: white;
 }
 
 .Adam_Title2 {
