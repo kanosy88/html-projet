@@ -190,7 +190,6 @@ ul {
   background-image: url("images/china/china-wall.jpg");
   background-size: cover;
   background-position: center;
-
   z-index: -1;
   filter: brightness(0.4);
 }
@@ -242,6 +241,7 @@ ul {
   margin-bottom: 100px;
   font-size: 20px;
   text-align: start;
+  /* todo: changer le type de curseur */
   cursor: pointer;
   margin: 0 60px;
   gap: 20px;
@@ -377,6 +377,77 @@ ul {
     top: 50px;
     font-size: 1.2rem;
   }
+}
+
+/* initial part */
+
+.tabs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 150px;
+  font-weight: 900;
+  position: relative;
+}
+
+.tab-content {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+  border: rgba(255, 255, 255, 0.4) 1px solid;
+  opacity: 0;
+  transition: all 0.35s;
+  font-size: 20px;
+  padding: 20px;
+  font-weight: 300;
+}
+
+.tab-switch {
+  display: none;
+}
+
+.tab-switch:checked + label {
+  color: rgba(255, 255, 255, 1);
+  text-shadow: 0px 0px 25px rgb(255, 255, 255),
+    0px 0px 100px rgb(255, 255, 255, 0.1);
+  transition: all 0.35s;
+  z-index: 1;
+  transform: translateY(-1rem);
+}
+
+.tab-switch:checked + label + .tab-content {
+  z-index: 2;
+  opacity: 1;
+  transition: all 0.35s;
+}
+
+label {
+  display: block;
+  color: rgba(255, 255, 255, 0.22);
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+label:hover {
+  transform: translateY(-1rem);
+}
+
+.tab-content-title {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+}
+
+.tab-content-text {
+  font-size: 25px;
+  line-height: 1.2;
+  text-align: justify;
 }
 
 /***************************************** ADAM'S SECTION ******************************************/
