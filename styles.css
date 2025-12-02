@@ -205,6 +205,19 @@ ul {
   cursor: default;
   color: white;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 1);
+  animation: fadeIn 2s cubic-bezier(0, 0.06, 0.2, 0.99) forwards;
+  letter-spacing: 0.1em;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  to {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
 }
 
 .billy-subtitle {
