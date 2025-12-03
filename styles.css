@@ -761,6 +761,13 @@ th:nth-child(even) {
   cursor: pointer;
   font-style: oblique;
 }
+.Aaron-maintitle {
+  font-size: 100px;
+  font-weight: 500;
+  text-align: center;
+  font-style: oblique;
+  cursor: pointer;
+}
 .Aaron-miniTitle {
   font-size: 40px;
   font-weight: 200;
@@ -827,7 +834,9 @@ th:nth-child(even) {
   font-size: 20px;
   font-weight: 500;
 }
-
+.Aaron-label {
+  color: white;
+}
 .Aaron-forms {
   text-align: center;
 }
@@ -855,8 +864,8 @@ th:nth-child(even) {
   color: rgb(255, 255, 255);
   font-weight: bolder;
   font-family: "Inter", sans-serif;
-  font-size: 100px;
-  border-width: 3px;
+  font-size: 6.25rem;
+  border-width: 0.188rem;
   border-style: solid;
   border-color: #000000;
 }
@@ -868,10 +877,10 @@ th:nth-child(even) {
 .boiteMiko {
   display: flex;
   justify-content: space-between;
-  gap: 25px;
-  padding: 0px;
-  margin-top: 25px;
-  margin-bottom: 50px;
+  gap: 1.563rem;
+  padding: 0rem;
+  margin-top: 1.563rem;
+  margin-bottom: 3.125rem;
 }
 
 .textMikoURL {
@@ -880,17 +889,17 @@ th:nth-child(even) {
   color: #ffffff;
   font-family: "GIll Sans" Arial, sans-serif;
   text-align: center;
-  margin-right: 250px;
-  margin-top: 25px;
+  margin-right: 15.625rem;
+  margin-top: 1.563rem;
 }
 
 .imageMikoleft {
   display: block;
-  margin-left: 300px;
-  margin-top: 50px;
+  margin-left: 18.75rem;
+  margin-top: 3.125rem;
   border: #ffffff;
-  height: 350px;
-  width: 350px;
+  height: 21.875rem;
+  width: 21.875rem;
   border: #ffffff;
   border-color: #ffffff;
   border-style: solid;
@@ -898,11 +907,11 @@ th:nth-child(even) {
 
 .imageMikoright {
   display: block;
-  margin-right: 300px;
-  margin-top: 50px;
+  margin-right: 18.75rem;
+  margin-top: 3.125rem;
   border: #ffffff;
-  height: 350px;
-  width: 350px;
+  height: 21.875rem;
+  width: 21.875rem;
   border: #ffffff;
   border-color: #ffffff;
   border-style: solid;
@@ -912,26 +921,26 @@ th:nth-child(even) {
   display: block;
   text-align: center;
   list-style-type: none;
-  padding-left: 2em;
-  text-indent: -2em;
+  padding-left: 2rem;
+  text-indent: -2rem;
   font-weight: bolder;
   line-height: 1rem;
-  margin-left: 250px;
+  margin-left: 15.625rem;
 }
 .liMiko {
-  margin: 10px;
+  margin: 0.625rem;
 }
 
 .tableMiko,
 .thMiko,
 .tdMiko,
 .tdMiko1 {
-  border: 3px solid;
+  border: 0.188rem solid;
   border-collapse: collapse;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: lighter;
   text-align: center;
-  margin-left: 450px;
+  margin-left: 28.125rem;
 }
 .thMiko {
   font-size: 1.25rem;
@@ -944,17 +953,17 @@ th:nth-child(even) {
 }
 
 .formMiko {
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: lighter;
   text-align: center;
-  margin-left: 375px;
-  border: 1px;
+  margin-left: 23.438rem;
+  border: 0.063rem;
   border-color: white;
   border-style: double;
 }
 .textareaMiko {
-  width: 300px;
-  height: 50px;
+  width: 43.75rem;
+  height: 3.125rem;
 }
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
