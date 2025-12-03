@@ -805,7 +805,120 @@ th:nth-child(even) {
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
+#BodyMiko {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(3, 1, 22);
+  color: white;
+}
 
+#h1Miko {
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww"); /* Image of backround */
+  background-size: cover; /* Make to imagge cover all the area */
+  background-position: center; /* Put image in the center */
+  min-height: 100vh; /* Make the backround visible on a scale of 100 % of a resolution of a screen  */
+  display: flex; /* allow to make the texte more creative*/
+  justify-content: center; /* Centers  horizontally */
+  align-items: center; /* Centers  vertically */
+  text-align: center; /* Centers the text */
+  color: rgb(255, 255, 255); /* color of the text*/
+  font-weight: bolder; /* le gras */
+  font-family: "Inter", sans-serif; /* la police */
+  font-size: 100px; /* la taille du text */
+  border-width: 3px; /* taille du border*/
+  border-style: solid; /*type de border*/
+  border-color: #000000; /* colur du border */
+}
+
+.h2Miko {
+  text-align: center;
+  font-size: 3rem;
+}
+.boiteMiko {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0px;
+}
+
+.textMikoURL {
+  font-size: 0, 5rem;
+  font-weight: lighter;
+  color: #ffffff;
+  font-family: "GIll Sans" Arial, sans-serif;
+  text-align: center;
+  margin-right: 250px;
+  margin-top: 25px;
+}
+
+.imageMikoleft {
+  display: block;
+  margin-left: 300px;
+  margin-top: 50px;
+  border: #ffffff;
+  height: 350px;
+  width: 350px;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.imageMikoright {
+  display: block;
+  margin-right: 300px;
+  margin-top: 50px;
+  border: #ffffff;
+  height: 350px;
+  width: 350px;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+#listeMiko {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 2em;
+  text-indent: -2em;
+  font-weight: bolder;
+  line-height: 1rem;
+  margin-left: 250px;
+}
+.liMiko {
+  margin: 10px;
+}
+
+.tableMiko,
+.thMiko,
+.tdMiko,
+.tdMiko1 {
+  border: 3px solid;
+  border-collapse: collapse;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 450px;
+}
+.thMiko {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tdMiko1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.formMiko {
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 375px;
+}
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
