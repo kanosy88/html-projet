@@ -846,21 +846,21 @@ th:nth-child(even) {
 
 #h1Miko {
   margin: 0;
-  background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww"); /* Image of backround */
-  background-size: cover; /* Make to imagge cover all the area */
-  background-position: center; /* Put image in the center */
-  min-height: 100vh; /* Make the backround visible on a scale of 100 % of a resolution of a screen  */
-  display: flex; /* allow to make the texte more creative*/
-  justify-content: center; /* Centers  horizontally */
-  align-items: center; /* Centers  vertically */
-  text-align: center; /* Centers the text */
-  color: rgb(255, 255, 255); /* color of the text*/
-  font-weight: bolder; /* le gras */
-  font-family: "Inter", sans-serif; /* la police */
-  font-size: 100px; /* la taille du text */
-  border-width: 3px; /* taille du border*/
-  border-style: solid; /*type de border*/
-  border-color: #000000; /* colur du border */
+  background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-weight: bolder;
+  font-family: "Inter", sans-serif;
+  font-size: 100px;
+  border-width: 3px;
+  border-style: solid;
+  border-color: #000000;
 }
 
 .h2Miko {
