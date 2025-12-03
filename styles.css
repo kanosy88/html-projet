@@ -136,6 +136,11 @@ ul {
   height: 100vh;
 }
 
+.Lucas-FirstPage {
+  display: flex;
+  justify-content: center;
+}
+
 .Lucas-FirstPage::before {
   content: "";
   position: fixed;
@@ -153,13 +158,18 @@ ul {
 
 .Lucas-Title {
   text-align: center;
-  display: flex;
-  justify-content: center;
-  font-size: 175px;
-  color: lab(56.79% 2.4 36.9);
+  font-size: 300px;
+  color: #baa8a3;
   font-family: "Times New Roman", Times, serif;
-  border-style: solid;
+  border-right: 3px solid #baa8a3;
+  border-left: 3px solid #baa8a3;
+  border-radius: 500px;
+  border-radius: 5%;
+  min-width: 30%;
+  text-shadow: 1px 1px 4px black;
+  box-shadow: 1px 1px 4px black;
 }
+
 /***************************************** BILLY'S SECTION ******************************************/
 
 /* content */
@@ -490,6 +500,7 @@ label:hover {
   min-height: 300vh;
   text-align: center;
 }
+
 .Adam_Landing {
   justify-content: center;
   font-size: 40px;
@@ -507,7 +518,7 @@ label:hover {
   background-image: url("images/maroc/desert.jpg");
   background-size: 100%;
   background-position: center;
-  filter: brightness(0.65);
+  filter: brightness(0.52);
 }
 
 .Adam_Title {
@@ -516,7 +527,7 @@ label:hover {
   font-weight: 900;
   margin-top: 80px;
   opacity: 0.72;
-  color: rgb(172, 105, 10);
+  color: #ac690a;
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
   transition: opacity 600ms, background-image 600ms;
 }
@@ -525,11 +536,10 @@ label:hover {
   margin-top: 70px;
   font-size: 25px;
   font-weight: 700;
-  color: white;
+  color: #f2e6d8;
   position: relative;
-  opacity: 0.65;
+  opacity: 0.8;
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.702);
-
   display: inline-block;
   padding: 20px 40px 20px;
   background: rgba(255, 255, 255, 0.12);
@@ -539,40 +549,175 @@ label:hover {
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  transition: transform 250ms, background 250ms, box-shadow 250ms;
+}
+
+.Adam_LearnMore:hover {
+  transform: scale(1.06);
 }
 
 .Adam_Description {
   margin-top: 250px;
-  font-size: 60px;
-  color: white;
+  width: 1320px;
+  font-size: 55px;
+  border-radius: 30px;
+  color: #f2e6d8;
   position: relative;
-  opacity: 0.65;
+  opacity: 0.82;
   text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.702);
-
   display: inline-block;
-  padding: 1px 300px 200px;
+  padding: 0px 0px 10px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 .Adam_DescriptionText {
+  color: #f2e6d8;
+  font-size: 35px;
+  margin: 100px;
+}
+
+.Adam_TitlePopulation {
+  text-align: center;
+  font-size: 155px;
+  margin-bottom: 10px;
+  margin-top: 220px;
+  opacity: 0.75;
+  color: #ead9c4;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
+  transition: opacity 300ms, background-image 300ms;
+}
+
+.Adam_Page2Containers {
+  display: flex;
+  justify-content: center;
+  gap: 75px;
+  margin-top: 125px;
+}
+
+.Adam_MaroccoFlag {
+  width: 400px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  position: relative;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_MaroccoFlag:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.524), 0 0 60px rgba(255, 255, 255, 0.477);
+  transform: scale(1.05);
+}
+
+.Adam_MaroccoFlag img {
+  height: 110%;
+  border-radius: 27px;
+  position: relative;
+}
+
+.Adam_TotalPopulation {
+  margin-top: 20px;
+
+  width: 320px;
+  height: 140px;
+
+  background: rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-align: center;
+}
+
+.Adam_CityPopulation {
+  width: 420px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 30px;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
   color: white;
 }
 
-.Adam_Title2 {
-  font-size: 200px;
-  font-weight: 900;
-  margin-bottom: 20px;
-  opacity: 0.5;
-  cursor: default;
-  color: rgb(173, 62, 10);
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.849);
-  transition: opacity 600ms, background-image 600ms;
+.Adam_PopulationTable {
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  font-size: 25px;
+}
+
+.Adam_PopulationTable th {
+  padding: 12px 10px;
+}
+
+.Adam_PopulationTable td {
+  padding: 10px 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.Adam_PopulationTable tbody tr:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.Adam_PopulationTable td:nth-child(even),
+th:nth-child(even) {
+  background-color: #00000033;
+}
+
+.Adam_TitleRivers {
+  text-align: center;
+  font-size: 170px;
+  margin-top: 200px;
+  margin-bottom: 80px;
+  opacity: 0.75;
+  color: #ead9c4;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
+}
+
+.Adam_ContainersRivers {
+  text-align: left;
+  width: 350px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  color: #f2e6d8;
+}
+.Adam_ContainersRivers ul {
+  padding: 50px;
+  margin-left: 40px;
+}
+
+.Adam_ListRivers {
+  color: #f2e6d8;
+  font-size: 30px;
 }
 
 /***************************************** AARON'S SECTION ******************************************/
@@ -690,7 +835,120 @@ label:hover {
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
+#BodyMiko {
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(3, 1, 22);
+  color: white;
+}
 
+#h1Miko {
+  margin: 0;
+  background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww"); /* Image of backround */
+  background-size: cover; /* Make to imagge cover all the area */
+  background-position: center; /* Put image in the center */
+  min-height: 100vh; /* Make the backround visible on a scale of 100 % of a resolution of a screen  */
+  display: flex; /* allow to make the texte more creative*/
+  justify-content: center; /* Centers  horizontally */
+  align-items: center; /* Centers  vertically */
+  text-align: center; /* Centers the text */
+  color: rgb(255, 255, 255); /* color of the text*/
+  font-weight: bolder; /* le gras */
+  font-family: "Inter", sans-serif; /* la police */
+  font-size: 100px; /* la taille du text */
+  border-width: 3px; /* taille du border*/
+  border-style: solid; /*type de border*/
+  border-color: #000000; /* colur du border */
+}
+
+.h2Miko {
+  text-align: center;
+  font-size: 3rem;
+}
+.boiteMiko {
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  padding: 0px;
+}
+
+.textMikoURL {
+  font-size: 0, 5rem;
+  font-weight: lighter;
+  color: #ffffff;
+  font-family: "GIll Sans" Arial, sans-serif;
+  text-align: center;
+  margin-right: 250px;
+  margin-top: 25px;
+}
+
+.imageMikoleft {
+  display: block;
+  margin-left: 300px;
+  margin-top: 50px;
+  border: #ffffff;
+  height: 350px;
+  width: 350px;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+.imageMikoright {
+  display: block;
+  margin-right: 300px;
+  margin-top: 50px;
+  border: #ffffff;
+  height: 350px;
+  width: 350px;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
+}
+
+#listeMiko {
+  display: block;
+  text-align: center;
+  list-style-type: none;
+  padding-left: 2em;
+  text-indent: -2em;
+  font-weight: bolder;
+  line-height: 1rem;
+  margin-left: 250px;
+}
+.liMiko {
+  margin: 10px;
+}
+
+.tableMiko,
+.thMiko,
+.tdMiko,
+.tdMiko1 {
+  border: 3px solid;
+  border-collapse: collapse;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 450px;
+}
+.thMiko {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.tdMiko1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.formMiko {
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  margin-left: 375px;
+}
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
