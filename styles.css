@@ -509,6 +509,7 @@ label:hover {
 .Adam_Landing::before {
   content: "";
   position: fixed;
+  background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
