@@ -727,7 +727,6 @@ th:nth-child(even) {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
 }
 .Aaron-flags {
   background-color: white;
@@ -736,9 +735,6 @@ th:nth-child(even) {
   align-items: center;
   width: 100%;
   border-radius: 15px;
-}
-.flag-in {
-  text-align: center;
 }
 
 .Aaron-text {
@@ -754,13 +750,22 @@ th:nth-child(even) {
 .Aaron-image {
   display: block;
   margin: 10px auto;
-  max-width: 100%;
   border-radius: 15px;
+  cursor: pointer;
+  transition: opacity 600ms, background-image 600ms;
+  opacity: 0, 5;
+  text-shadow: #333;
 }
 .Aaron-title {
-  color: rgb(248, 248, 248);
+  color: rgb(231, 231, 231);
   text-align: center;
   font-size: 40px;
+  cursor: pointer;
+  font-style: oblique;
+}
+.Aaron-miniTitle {
+  font-size: 40px;
+  font-weight: 200;
 }
 .table-Aaron {
   border: 2px solid;
@@ -792,12 +797,37 @@ th:nth-child(even) {
   text-align: center;
   width: 300px;
 }
+.Aaron-contain {
+  margin-left: 275px;
+}
+.Aaron-history2 {
+  display: inline-block;
+  vertical-align: top;
+  width: 39%;
+  background-color: rgba(51, 77, 55, 0.6);
+  border-radius: 15px;
+  padding: 20px;
+}
+.Aaron-list,
+.Aaron-history2 {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .Aaron-list {
   text-align: center;
   background-color: rgba(51, 77, 55, 0.6);
   border-radius: 15px;
-  width: 50%;
-  margin: auto;
+  display: inline-block;
+  vertical-align: top;
+  width: 36%;
+  margin-right: 2%;
+  padding: 20px;
+}
+.Aaron-link {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .Aaron-forms {
