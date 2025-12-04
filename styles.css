@@ -952,17 +952,7 @@ th:nth-child(even) {
   font-weight: bolder;
 }
 
-.imageMikoleft {
-  display: block;
-  border: #ffffff;
-  height: 25rem;
-  width: 25rem;
-  border: #ffffff;
-  border-color: #ffffff;
-  border-style: solid;
-}
-
-.imageMikoright {
+.imageMiko {
   display: block;
   border: #ffffff;
   height: 25rem;
@@ -1016,6 +1006,7 @@ th:nth-child(even) {
   width: 50rem;
   height: 5rem;
 }
+
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
