@@ -322,7 +322,7 @@ ul {
 .billy-th {
   border: 1px solid #dddddd;
   text-align: center;
-  padding: 0.9;
+  padding: 0.9px;
   transition: text-shadow 300ms, color 300ms;
   cursor: default;
 }
