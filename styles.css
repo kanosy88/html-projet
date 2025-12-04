@@ -189,6 +189,7 @@ ul {
 }
 
 .Lucas-SecondePage {
+  height: 100vh;
   display: flex;
   flex-direction: row-reverse;
   align-items: flex-start;
@@ -202,10 +203,11 @@ ul {
   border-color: rgb(255, 255, 255);
   font-family: "GildaDisplay";
   text-align: center;
-  font-size: 70px;
+  font-size: 60px;
   padding: 2%;
   margin: 15% 15% 2% 15%;
   max-width: 60%;
+  transition: 300ms;
 }
 
 .Lucas-ItalyDescription {
@@ -240,6 +242,60 @@ ul {
   width: 100%;
 }
 
+.Lucas-ThirdPage {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.Lucas-ItalyTable {
+  border: 1px solid rgba(255, 255, 255, 0.678);
+  border-width: 3px;
+  border-collapse: collapse;
+  font-family: "GildaDisplay";
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+  width: 75%;
+  height: auto;
+}
+
+.Lucas-ItalyTable th {
+  padding: 20px 20px;
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+  text-align: center;
+  width: 45%;
+}
+
+.Lucas-ItalyTable td:nth-child(even) {
+  border-bottom: 1px solid #333;
+  background-color: rgba(83, 83, 83, 0.288);
+  text-align: center;
+}
+
+.Lucas-ItalyTable tr,
+td {
+  white-space: nowrap;
+}
+
+.Lucas-ImageNextToTable {
+  width: 500px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: transform 0.4 ease, filter 0.4 ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  transition: 300ms;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Lucas-ImageNextToTable:hover {
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  transform: scale(1.5);
+}
 /***************************************** BILLY'S SECTION ******************************************/
 
 /* content */
