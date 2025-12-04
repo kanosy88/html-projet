@@ -718,7 +718,7 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
-/***************************************** AARON'S SECTION ******************************************/
+/***************************************** AARON MIKOBI'S SECTION ******************************************/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
   background-position: center;
@@ -761,9 +761,16 @@ th:nth-child(even) {
   cursor: pointer;
   font-style: oblique;
 }
-.Aaron-miniTitle {
-  font-size: 40px;
-  font-weight: 200;
+.Aaron-maintitle {
+  font-size: 100px;
+  font-weight: 400;
+  font-style: oblique;
+  border: 5px solid;
+  padding: 2px 6px;
+  width: fit-content;
+  text-align: center;
+  margin: 140px auto 20px auto;
+  border-radius: 15px;
 }
 .table-Aaron {
   border: 2px solid;
@@ -830,6 +837,14 @@ th:nth-child(even) {
 
 .Aaron-forms {
   text-align: center;
+}
+.Aaron-forms2 {
+  border: 5px solid;
+  border-color: rgba(255, 250, 250, 0.205);
+  text-align: center;
+  background-color: #00000046;
+  border-radius: 15px;
+  padding: 2px 6px;
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
