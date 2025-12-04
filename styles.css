@@ -781,9 +781,17 @@ th:nth-child(even) {
   cursor: pointer;
   font-style: oblique;
 }
-.Aaron-miniTitle {
-  font-size: 40px;
-  font-weight: 200;
+.Aaron-maintitle {
+  font-size: 100px;
+  font-weight: 400;
+  font-style: oblique;
+  border: 5px solid;
+  padding: 2px 6px;
+  width: fit-content;
+  text-align: center;
+  margin: 140px auto 20px auto;
+  border-radius: 15px;
+  cursor: pointer;
 }
 .table-Aaron {
   border: 2px solid;
@@ -859,8 +867,28 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 2px 6px;
 }
+.Aaron-radio {
+  transform: scale(2);
+  margin: 10px;
+  gap: 20px;
+}
+.Aaron-radio-label {
+  font-size: 30px; /* taille du texte */
+  font-weight: bold;
+  color: white;
+  margin-left: 10px; /* espace entre bouton et texte */
+}
+.Aaron-label {
+  display: block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 600ms;
+  font-size: 60px;
+}
+
 .Aaron-button {
-  color: rgb(228, 228, 228);
+  background-color: #00000093;
+  color: rgb(255, 255, 255);
   padding: 15px 40px;
   border-radius: 6px;
   font-size: 18px;
@@ -868,6 +896,9 @@ th:nth-child(even) {
   cursor: pointer;
   display: block;
   margin: 0 auto;
+}
+.Aaron-button:hover {
+  box-shadow: #baa8a3;
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
