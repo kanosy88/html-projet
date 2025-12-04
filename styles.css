@@ -510,6 +510,7 @@ label:hover {
   content: "";
   position: fixed;
   background-repeat: no-repeat;
+  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -524,7 +525,7 @@ label:hover {
   text-align: center;
   font-size: 190px;
   font-weight: 900;
-  margin-top: 110px;
+  margin-top: 95px;
   opacity: 0.72;
   color: #ac690a;
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
@@ -699,6 +700,7 @@ th:nth-child(even) {
   text-align: left;
   width: 350px;
   margin: auto;
+  margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -718,6 +720,23 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
+.Adam_MapRivers {
+  text-align: center;
+  width: 450px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  color: #f2e6d8;
+}
+.Adam_TextMapRivers {
+  text-align: center;
+  color: #f2e6d8;
+}
 
 /***************************************** AARON'S SECTION ******************************************/
 .Aaron-body {
