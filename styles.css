@@ -510,7 +510,6 @@ label:hover {
   content: "";
   position: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
   top: 0;
   left: 0;
   width: 100%;
@@ -525,7 +524,7 @@ label:hover {
   text-align: center;
   font-size: 190px;
   font-weight: 900;
-  margin-top: 95px;
+  margin-top: 110px;
   opacity: 0.72;
   color: #ac690a;
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
@@ -706,7 +705,6 @@ th:nth-child(even) {
   text-align: left;
   width: 350px;
   margin: auto;
-  margin-bottom: 25px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -727,6 +725,7 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
+<<<<<<< HEAD
 .Adam_ContainersMapRivers {
   align-items: center;
   width: 370px;
@@ -785,7 +784,10 @@ th:nth-child(even) {
   margin-bottom: 20px;
 }
 
+=======
+>>>>>>> ad304482fd2d6a3e030f68d4079c3cd11d0cd3f1
 /***************************************** AARON'S SECTION ******************************************/
+/* to put an image in the background*/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
   background-position: center;
@@ -793,15 +795,7 @@ th:nth-child(even) {
   background-size: cover;
   background-attachment: fixed;
 }
-.Aaron-flags {
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  border-radius: 15px;
-}
-
+/* for texts of the body and a background for them*/
 .Aaron-text {
   background-color: rgba(51, 77, 55, 0.6);
   width: 70%;
@@ -811,7 +805,7 @@ th:nth-child(even) {
   font-size: 18px;
   line-height: 1.6;
 }
-
+/* its for  all the image of the HTML */
 .Aaron-image {
   display: block;
   margin: 10px auto;
@@ -821,6 +815,7 @@ th:nth-child(even) {
   opacity: 0, 5;
   text-shadow: #333;
 }
+/* this code is for all the title of the code*/
 .Aaron-title {
   color: rgb(231, 231, 231);
   text-align: center;
@@ -828,16 +823,29 @@ th:nth-child(even) {
   cursor: pointer;
   font-style: oblique;
 }
-.Aaron-miniTitle {
-  font-size: 40px;
-  font-weight: 200;
+
+/* this is the main title of the page*/
+.Aaron-maintitle {
+  font-size: 100px;
+  font-weight: 400;
+  font-style: oblique;
+  border: 5px solid;
+  padding: 2px 6px;
+  width: fit-content;
+  text-align: center;
+  margin: 140px auto 20px auto;
+  border-radius: 15px;
+  cursor: pointer;
 }
+
+/* thats the table of the code*/
 .table-Aaron {
   border: 2px solid;
   margin: auto;
   background-color: rgba(51, 77, 55, 0.6);
   border-collapse: collapse;
 }
+/* this is to put the border off the table*/
 .Aaron-th,
 .Aaron-td {
   border: 1px solid;
@@ -846,7 +854,7 @@ th:nth-child(even) {
 .Aaron-th {
   border: none;
 }
-
+/* i wanted to align the image in the same line*/
 .Container-history-aaron {
   background-color: rgba(51, 77, 55, 0.6);
   display: flex;
@@ -857,7 +865,7 @@ th:nth-child(even) {
   gap: 20px;
   border-radius: 15px;
 }
-
+/*to put the title of the history in the middle of the space*/
 .Aaron-history {
   text-align: center;
   width: 300px;
@@ -865,6 +873,7 @@ th:nth-child(even) {
 .Aaron-contain {
   margin-left: 275px;
 }
+/* i wanted to put this block on the right of the screen */
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
@@ -873,12 +882,13 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 20px;
 }
+/* it was to put them on the same lign and to align them*/
 .Aaron-list,
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
 }
-
+/* this code was to put the block on the left of the screen*/
 .Aaron-list {
   text-align: center;
   background-color: rgba(51, 77, 55, 0.6);
@@ -895,6 +905,8 @@ th:nth-child(even) {
   font-weight: 500;
 }
 
+/* The forms*/
+
 .Aaron-forms {
   text-align: center;
 }
@@ -906,27 +918,41 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 2px 6px;
 }
-.Aaron-button {
-  background: linear-gradient(135deg, #c5dbd0 0%, #b1d8c4 100%);
-  color: rgb(15, 7, 7);
-  padding: 15px 40px;
-  border: none;
-  border-radius: 6px;
-  font-size: 18px;
+/* my buttons and mini questions for the animation*/
+.Aaron-radio {
+  transform: scale(2);
+  margin: 10px;
+  gap: 20px;
+}
+.Aaron-radio-label {
+  font-size: 30px;
   font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: white;
+  margin-left: 10px; /* space between buttons */
+}
+.Aaron-label {
   display: block;
-  margin: 0 auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 600ms;
+  font-size: 60px;
+}
+/*the code to add the button submit*/
+.Aaron-button {
+  background-color: #00000093;
+  color: rgb(255, 255, 255);
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
 #BodyMiko {
   font-family: "Inter", sans-serif;
   font-weight: 100;
-  margin: 0;
-  padding: 0;
   background-color: rgb(3, 1, 22);
   color: white;
 }
@@ -944,54 +970,42 @@ th:nth-child(even) {
   color: rgb(255, 255, 255);
   font-weight: bolder;
   font-family: "Inter", sans-serif;
-  font-size: 100px;
-  border-width: 3px;
+  font-size: 6rem;
+  border-width: 0.2rem;
   border-style: solid;
-  border-color: #000000;
+  border-color: #ffffff;
 }
 
 .h2Miko {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .boiteMiko {
   display: flex;
-  justify-content: space-between;
-  gap: 25px;
-  padding: 0px;
-  margin-top: 25px;
-  margin-bottom: 50px;
+  gap: 2rem;
+  padding: 0rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .textMikoURL {
-  font-size: 0, 5rem;
+  font-size: 1rem;
   font-weight: lighter;
   color: #ffffff;
   font-family: "GIll Sans" Arial, sans-serif;
   text-align: center;
-  margin-right: 250px;
-  margin-top: 25px;
+  width: 25rem;
+  height: 25rem;
+  font-weight: bolder;
 }
 
-.imageMikoleft {
+.imageMiko {
   display: block;
-  margin-left: 300px;
-  margin-top: 50px;
   border: #ffffff;
-  height: 350px;
-  width: 350px;
-  border: #ffffff;
-  border-color: #ffffff;
-  border-style: solid;
-}
-
-.imageMikoright {
-  display: block;
-  margin-right: 300px;
-  margin-top: 50px;
-  border: #ffffff;
-  height: 350px;
-  width: 350px;
+  height: 25rem;
+  width: 25rem;
   border: #ffffff;
   border-color: #ffffff;
   border-style: solid;
@@ -1001,26 +1015,23 @@ th:nth-child(even) {
   display: block;
   text-align: center;
   list-style-type: none;
-  padding-left: 2em;
-  text-indent: -2em;
+  text-indent: 2rem;
   font-weight: bolder;
   line-height: 1rem;
-  margin-left: 250px;
 }
 .liMiko {
-  margin: 10px;
+  margin: 1rem;
 }
 
 .tableMiko,
 .thMiko,
 .tdMiko,
 .tdMiko1 {
-  border: 3px solid;
+  border: 0.3rem solid;
   border-collapse: collapse;
   padding: 10px;
   font-weight: lighter;
   text-align: center;
-  margin-left: 450px;
 }
 .thMiko {
   font-size: 1.25rem;
@@ -1033,17 +1044,25 @@ th:nth-child(even) {
 }
 
 .formMiko {
-  padding: 10px;
+  padding: 0.5rem;
   font-weight: lighter;
   text-align: center;
-  margin-left: 375px;
-  border: 1px;
+  border: 0.5rem;
   border-color: white;
   border-style: double;
 }
 .textareaMiko {
-  width: 700px;
-  height: 50px;
+  width: 50rem;
+  height: 5rem;
+}
+.imagePologneMiko {
+  display: block;
+  border: #ffffff;
+  height: 25rem;
+  width: 45rem;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
 }
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
@@ -1301,7 +1320,7 @@ th:nth-child(even) {
   margin-right: 10px;
   transform: scale(1.2);
 }
-
+/*
 button[type="submit"] {
   background: linear-gradient(135deg, #007a3d 0%, #005a2c 100%);
   color: white;
@@ -1322,6 +1341,7 @@ button[type="submit"]:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #005a2c 0%, #004020 100%);
 }
+*/
 
 @media (max-width: 768px) {
   .header-content {
