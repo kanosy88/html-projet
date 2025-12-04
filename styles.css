@@ -492,6 +492,60 @@ label:hover {
   transition: transform 300ms;
 }
 
+/* form-part */
+
+.feedback-page {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.feedback-title-container {
+  background-color: rgb(153, 243, 168);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 50px;
+  gap: 10px;
+}
+
+.feedback-title {
+  font-size: 65px;
+  margin: 0;
+  line-height: 90%;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.feedback-subtitle {
+  font-size: 26px;
+  margin: 0;
+  font-weight: 200;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.feedback-inputs-container {
+  background-color: rgb(243, 153, 153);
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback-input {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 /***************************************** ADAM'S SECTION ******************************************/
 
 .Adam_Content {
@@ -1064,7 +1118,7 @@ th:nth-child(even) {
 }
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
-.main-nav ul {
+/* .main-nav ul {
   list-style: none;
   display: flex;
   gap: 2rem;
@@ -1103,10 +1157,10 @@ th:nth-child(even) {
   font-size: 2.5rem;
   border-bottom: 3px solid #ce1126;
   padding-bottom: 1rem;
-}
+} */
 
 /* Hero image section */
-.palestine-hero {
+/* .palestine-hero {
   text-align: center;
   margin: 30px 0;
   padding: 30px;
@@ -1128,19 +1182,19 @@ th:nth-child(even) {
   font-style: italic;
   max-width: 600px;
   margin: 0 auto;
-}
+} */
 
 /* Section headings */
-.palestine-main h2 {
+/* .palestine-main h2 {
   color: #007a3d;
   border-bottom: 2px solid #ce1126;
   padding-bottom: 0.5rem;
   margin: 2rem 0 1rem 0;
   font-size: 1.8rem;
-}
+} */
 
 /* Country facts table */
-.country-facts {
+/* .country-facts {
   width: 100%;
   border-collapse: collapse;
   margin: 20px 0;
@@ -1170,10 +1224,10 @@ th:nth-child(even) {
 .country-facts tr:hover {
   background-color: #e8f4f8;
   transition: background-color 0.3s ease;
-}
+} */
 
 /* Places to visit list */
-.palestine-places {
+/* .palestine-places {
   background: linear-gradient(135deg, #e8f4f8 0%, #d1ecf1 100%);
   padding: 25px;
   border-radius: 10px;
@@ -1198,10 +1252,10 @@ th:nth-child(even) {
 
 .palestine-places strong {
   color: #ce1126;
-}
+} */
 
 /* Cultural heritage section */
-.palestine-heritage {
+/* .palestine-heritage {
   background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
   padding: 30px;
   border-radius: 12px;
@@ -1234,10 +1288,10 @@ th:nth-child(even) {
 .heritage-item p {
   color: #555;
   line-height: 1.7;
-}
+} */
 
 /* External resources section */
-.external-resources {
+/* .external-resources {
   text-align: center;
   padding: 25px;
   background-color: #fff3cd;
@@ -1259,10 +1313,10 @@ th:nth-child(even) {
   background-color: #007a3d;
   color: white;
   text-decoration: none;
-}
+} */
 
 /* Form styling */
-.visitor-feedback {
+/* .visitor-feedback {
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   padding: 30px;
   border-radius: 12px;
@@ -1318,7 +1372,7 @@ th:nth-child(even) {
   margin-right: 10px;
   transform: scale(1.2);
 }
-/*
+
 button[type="submit"] {
   background: linear-gradient(135deg, #007a3d 0%, #005a2c 100%);
   color: white;
@@ -1339,7 +1393,7 @@ button[type="submit"]:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #005a2c 0%, #004020 100%);
 }
-*/
+
 
 @media (max-width: 768px) {
   .header-content {
@@ -1372,4 +1426,4 @@ button[type="submit"]:hover {
   .palestine-main h1 {
     font-size: 2rem;
   }
-}
+} */
