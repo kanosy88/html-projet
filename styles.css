@@ -1044,6 +1044,7 @@ th:nth-child(even) {
   border-width: 0.2rem;
   border-style: solid;
   border-color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /* code for my second's title */
@@ -1107,35 +1108,13 @@ a.linkMiko:visited {
   text-indent: 2rem;
   font-weight: bolder;
   line-height: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*code for my lists*/
 .liMiko {
   margin: 1rem;
-}
-
-/*code for my table*/
-.tablesMiko,
-.thMiko,
-.tdMiko,
-.tdMiko1 {
-  border: 0.3rem solid;
-  border-collapse: collapse;
-  padding: 10px;
-  font-weight: lighter;
-  text-align: center;
-}
-
-/*code for my title in my table*/
-.thMiko {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-/*code for my title in my table*/
-.tdMiko1 {
-  font-size: 1.25rem;
-  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*code for my form*/
@@ -1146,11 +1125,13 @@ a.linkMiko:visited {
   border: 0.5rem;
   border-color: white;
   border-style: double;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /*code for my inputs*/
 .textareaMiko {
   width: 50rem;
   height: 5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /*code for my flag of poland*/
 .imagePolandMiko {
@@ -1185,6 +1166,33 @@ a.linkMiko:visited {
   text-align: center;
   justify-content: center;
   align-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*code for my table*/
+.tablesMiko,
+.thMiko,
+.tdMiko,
+.tdMiko1 {
+  border: 0.3rem solid;
+  border-collapse: collapse;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*code for my title in my table*/
+.thMiko {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*code for my title in my table*/
+.tdMiko1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /***************************************** MANU CLIFFORD'S SECTION ******************************************/
 
