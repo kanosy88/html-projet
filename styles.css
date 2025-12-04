@@ -1069,11 +1069,11 @@ th:nth-child(even) {
   font-size: 1rem;
   font-weight: lighter;
   color: #ffffff;
-  font-family: "GIll Sans" Arial, sans-serif;
   text-align: center;
   width: 25rem;
   height: 25rem;
   font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 /*code for the color of my link when he is normal */
@@ -1169,14 +1169,13 @@ a.linkMiko:visited {
   font-size: 1.5rem;
   font-weight: lighter;
   color: #000000;
-  font-family: "GIll Sans" Arial, sans-serif;
   text-align: center;
   font-weight: bolder;
   align-items: center;
   justify-content: center;
   width: 40rem;
   opacity: 0;
-  text-shadow: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /*code for opacity when the mouse is on the flag*/
 .MikotextImage:hover {
