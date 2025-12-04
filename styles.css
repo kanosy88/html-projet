@@ -461,14 +461,14 @@ ul {
   transition: all 0.35s;
 }
 
-label {
+.tab-label {
   display: block;
   color: rgba(255, 255, 255, 0.22);
   cursor: pointer;
   transition: all 0.25s;
 }
 
-label:hover {
+.tab-level:hover {
   transform: translateY(-1rem);
 }
 
@@ -505,7 +505,6 @@ label:hover {
 }
 
 .feedback-title-container {
-  background-color: rgb(153, 243, 168);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -514,36 +513,95 @@ label:hover {
   padding-left: 100px;
   padding-right: 50px;
   gap: 10px;
+  position: relative;
+}
+
+.feedback-title-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/china/china-roof.png");
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scaleX(-1);
+  filter: blur(2px);
 }
 
 .feedback-title {
-  font-size: 65px;
+  font-size: 6rem;
   margin: 0;
   line-height: 90%;
-  font-weight: 200;
+  font-weight: 150;
   font-style: italic;
 }
 
 .feedback-subtitle {
-  font-size: 26px;
+  font-size: 1.875rem;
   margin: 0;
-  font-weight: 200;
+  font-weight: 150;
   color: rgba(255, 255, 255, 0.65);
 }
 
 .feedback-inputs-container {
-  background-color: rgb(243, 153, 153);
-  width: 90%;
+  width: 60%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 50px;
+  padding-right: 100px;
+  gap: 45px;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.feedback-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.feedback-input-label {
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
 }
 
 .feedback-input {
   -webkit-appearance: none;
   appearance: none;
+  height: 38px;
+  border: none;
+  padding: 0;
+  font-size: 22px;
+  background: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding-block: 0px;
+  transition: border-bottom-color 300ms;
+}
+
+.feedback-input:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+.feedback-input:not(:placeholder-shown) {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+.feedback-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 /***************************************** ADAM'S SECTION ******************************************/
