@@ -999,8 +999,11 @@ th:nth-child(even) {
   font-weight: bolder;
 }
 
-.lienMiko {
-  color: rgb(60, 60, 211);
+a.lienMiko:active {
+  color: rgb(0, 0, 0);
+}
+a.lienMiko:visited {
+  color: #ce1126;
 }
 
 .imageMiko {
