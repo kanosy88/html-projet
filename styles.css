@@ -524,7 +524,7 @@ label:hover {
   text-align: center;
   font-size: 190px;
   font-weight: 900;
-  margin-top: 110px;
+  margin-top: 100px;
   opacity: 0.72;
   color: #ac690a;
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
@@ -695,12 +695,6 @@ th:nth-child(even) {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
 }
 
-.Adam_Adam_Page3Containers {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
 .Adam_ContainersRivers {
   text-align: left;
   width: 350px;
@@ -725,10 +719,17 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
+.Adam_Page3Containers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
 .Adam_ContainersMapRivers {
   align-items: center;
   width: 370px;
-  margin: auto;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -743,7 +744,6 @@ th:nth-child(even) {
   width: 90%;
   border-radius: 20px;
   margin: 20px auto 10px;
-  display: block;
 }
 
 .Adam_TextMapRivers {
@@ -751,13 +751,14 @@ th:nth-child(even) {
   color: #f2e6d8;
   font-size: 22px;
   font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
   margin-bottom: 20px;
 }
 
 .Adam_ContainersRiversPhoto {
   align-items: center;
   width: 370px;
-  margin: auto;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
   -webkit-backdrop-filter: blur(30px);
@@ -779,7 +780,8 @@ th:nth-child(even) {
   color: #f2e6d8;
   font-size: 22px;
   font-weight: 500;
-  margin-bottom: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
 }
 
 /***************************************** AARON'S SECTION ******************************************/
