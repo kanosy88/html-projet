@@ -1132,7 +1132,29 @@ th:nth-child(even) {
   border-color: #ffffff;
   border-style: solid;
 }
-/***************************************** CLIFFORD'S SECTION ******************************************/
+.MikotextImage {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #000000;
+  font-family: "GIll Sans" Arial, sans-serif;
+  text-align: center;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  opacity: 0;
+  text-shadow: black;
+}
+.MikotextImage:hover {
+  opacity: 1;
+}
+.PimageMiko {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+/***************************************** MANU CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
   list-style: none;
