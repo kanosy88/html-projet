@@ -896,9 +896,6 @@ th:nth-child(even) {
   display: block;
   margin: 0 auto;
 }
-.Aaron-button:hover {
-  box-shadow: #baa8a3;
-}
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
 #BodyMiko {
@@ -1263,7 +1260,7 @@ th:nth-child(even) {
   margin-right: 10px;
   transform: scale(1.2);
 }
-
+/*
 button[type="submit"] {
   background: linear-gradient(135deg, #007a3d 0%, #005a2c 100%);
   color: white;
@@ -1284,6 +1281,7 @@ button[type="submit"]:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #005a2c 0%, #004020 100%);
 }
+*/
 
 @media (max-width: 768px) {
   .header-content {
