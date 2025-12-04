@@ -933,17 +933,7 @@ th:nth-child(even) {
   font-weight: bolder;
 }
 
-.imageMikoleft {
-  display: block;
-  border: #ffffff;
-  height: 25rem;
-  width: 25rem;
-  border: #ffffff;
-  border-color: #ffffff;
-  border-style: solid;
-}
-
-.imageMikoright {
+.imageMiko {
   display: block;
   border: #ffffff;
   height: 25rem;
@@ -996,6 +986,15 @@ th:nth-child(even) {
 .textareaMiko {
   width: 50rem;
   height: 5rem;
+}
+.imagePologneMiko {
+  display: block;
+  border: #ffffff;
+  height: 25rem;
+  width: 45rem;
+  border: #ffffff;
+  border-color: #ffffff;
+  border-style: solid;
 }
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
