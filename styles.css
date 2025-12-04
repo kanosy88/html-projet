@@ -131,7 +131,7 @@ ul {
   margin: 0;
 }
 
-/***************************************** LUCAS'S SECTION ******************************************/
+/***************************************** VAN CAUWELAERT LUCAS'S SECTION ******************************************/
 .Lucas-Content {
   height: 100vh;
 }
@@ -170,7 +170,7 @@ ul {
   box-shadow: 1px 1px 4px black;
 }
 
-/***************************************** BILLY'S SECTION ******************************************/
+/***************************************** AGBO BILLY'S SECTION ******************************************/
 
 /* content */
 
@@ -492,7 +492,7 @@ label:hover {
   transition: transform 300ms;
 }
 
-/***************************************** ADAM'S SECTION ******************************************/
+/***************************************** BENABDELHAK ADAM'S SECTION ******************************************/
 
 .Adam_Content {
   display: flex;
@@ -784,7 +784,7 @@ th:nth-child(even) {
   margin-bottom: 10px;
 }
 
-/***************************************** AARON'S SECTION ******************************************/
+/***************************************** MIKOBI AARON'S SECTION ******************************************/
 /* to put an image in the background*/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
@@ -947,7 +947,7 @@ th:nth-child(even) {
   margin: auto;
 }
 
-/***************************************** MIKOLAJ'S SECTION ******************************************/
+/***************************************** KOWAL MIKOLAJ'S SECTION ******************************************/
 #BodyMiko {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -1091,7 +1091,7 @@ a.lienMiko:visited {
   justify-content: center;
   align-content: center;
 }
-/***************************************** CLIFFORD'S SECTION ******************************************/
+/***************************************** MANU CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
   list-style: none;
