@@ -644,7 +644,7 @@
           </tr>
         </table>
       </div>
-      <!-- PAGE Formulaire -->
+      <!-- PAGE Feedback -->
       <div class="billy-page feedback-page">
         <div class="feedback-title-container">
           <h1 class="feedback-title">Any feedback on my page?</h1>
@@ -653,28 +653,50 @@
             the opportunity to work in the future.
           </h3>
         </div>
-        <div class="feedback-inputs-container">
-          <div class="feedback-input-container">
-            <label class="feedback-input-label">What's your name?</label>
-            <input class="feedback-input" placeholder="John Pork" type="text" />
+        <form class="feedback-form" action="">
+          <div class="feedback-inputs-container">
+            <div class="feedback-input-container">
+              <label class="feedback-input-label">What's your name?</label>
+              <input
+                class="feedback-input"
+                placeholder="John Pork"
+                type="text"
+              />
+            </div>
+            <div class="feedback-input-container">
+              <label class="feedback-input-label">What's your email?</label>
+              <input
+                class="feedback-input"
+                placeholder="john.pork@example.com"
+                type="email"
+              />
+            </div>
+            <div class="feedback-input-container">
+              <label class="feedback-input-label">Share your thoughts</label>
+              <input
+                class="feedback-input"
+                placeholder="omggg billy your page is beautiful..."
+                type="text"
+              />
+            </div>
           </div>
-          <div class="feedback-input-container">
-            <label class="feedback-input-label">What's your email?</label>
-            <input
-              class="feedback-input"
-              placeholder="john.pork@example.com"
-              type="email"
-            />
-          </div>
-          <div class="feedback-input-container">
-            <label class="feedback-input-label">Share your thoughts</label>
-            <input
-              class="feedback-input"
-              placeholder="omggg billy your page is beautiful..."
-              type="text"
-            />
-          </div>
-        </div>
+          <button class="feedback-submit-button" type="submit">
+            Submit
+            <svg
+              stroke="currentColor"
+              fill="currentColor"
+              stroke-width="0"
+              viewBox="0 0 24 24"
+              height="31px"
+              width="31px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"
+              ></path>
+            </svg>
+          </button>
+        </form>
       </div>
       <!-- FOOTER -->
       <footer>
