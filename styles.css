@@ -1069,9 +1069,6 @@ a.lienMiko:visited {
   border-color: #ffffff;
   border-style: solid;
 }
-.imagePologneMiko:hover {
-  zoom: 1.2;
-}
 .MikotextImage {
   position: absolute;
   font-size: 1.5rem;
@@ -1083,6 +1080,16 @@ a.lienMiko:visited {
   align-items: center;
   justify-content: center;
   width: 40rem;
+  opacity: 0;
+  text-shadow: black;
+}
+.MikotextImage:hover {
+  opacity: 1;
+}
+.PimageMiko {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 /***************************************** CLIFFORD'S SECTION ******************************************/
 
