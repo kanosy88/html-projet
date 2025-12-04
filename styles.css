@@ -948,6 +948,8 @@ th:nth-child(even) {
 }
 
 /***************************************** KOWAL MIKOLAJ'S SECTION ******************************************/
+
+/* code for background  */
 #BodyMiko {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -955,6 +957,7 @@ th:nth-child(even) {
   color: white;
 }
 
+/* code for my first title and his background */
 #h1Miko {
   margin: 0;
   background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww");
@@ -974,10 +977,13 @@ th:nth-child(even) {
   border-color: #ffffff;
 }
 
+/* code for my second's title */
 .h2Miko {
   text-align: center;
   font-size: 2.5rem;
 }
+
+/*Code to seperate section of my website and to put item in the middle*/
 .boiteMiko {
   display: flex;
   gap: 2rem;
@@ -988,6 +994,7 @@ th:nth-child(even) {
   justify-content: center;
 }
 
+/*code for my text with a link*/
 .textMikoURL {
   font-size: 1rem;
   font-weight: lighter;
@@ -999,13 +1006,21 @@ th:nth-child(even) {
   font-weight: bolder;
 }
 
-a.lienMiko:active {
-  color: rgb(0, 0, 0);
+/*code for the color of my link when he is normal */
+.lienMiko {
+  color: rgb(18, 6, 145);
 }
+
+/*code for the color of my link when he is normal */
+a.lienMiko:active {
+  color: rgb(18, 6, 145);
+}
+
+/*code for the color of my link when clicked */
 a.lienMiko:visited {
   color: red;
 }
-
+/*code for my image*/
 .imageMiko {
   display: block;
   border: #ffffff;
@@ -1015,7 +1030,7 @@ a.lienMiko:visited {
   border-color: #ffffff;
   border-style: solid;
 }
-
+/* code for my lists*/
 #listeMiko {
   display: block;
   text-align: center;
@@ -1024,10 +1039,13 @@ a.lienMiko:visited {
   font-weight: bolder;
   line-height: 1rem;
 }
+
+/*code for my lists*/
 .liMiko {
   margin: 1rem;
 }
 
+/*code for my table*/
 .tableMiko,
 .thMiko,
 .tdMiko,
@@ -1038,16 +1056,20 @@ a.lienMiko:visited {
   font-weight: lighter;
   text-align: center;
 }
+
+/*code for my title in my table*/
 .thMiko {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
+/*code for my title in my table*/
 .tdMiko1 {
   font-size: 1.25rem;
   font-weight: bold;
 }
 
+/*code for my form*/
 .formMiko {
   padding: 0.5rem;
   font-weight: lighter;
@@ -1056,10 +1078,12 @@ a.lienMiko:visited {
   border-color: white;
   border-style: double;
 }
+/*code for my inputs*/
 .textareaMiko {
   width: 50rem;
   height: 5rem;
 }
+/*code for my flag of poland*/
 .imagePologneMiko {
   display: block;
   border: #ffffff;
@@ -1069,6 +1093,7 @@ a.lienMiko:visited {
   border-color: #ffffff;
   border-style: solid;
 }
+/*code for my text on the flag*/
 .MikotextImage {
   position: absolute;
   font-size: 1.5rem;
@@ -1083,9 +1108,11 @@ a.lienMiko:visited {
   opacity: 0;
   text-shadow: black;
 }
+/*code for opacity when the mouse is on the flag*/
 .MikotextImage:hover {
   opacity: 1;
 }
+/*code for my paragraphe under the flag*/
 .PimageMiko {
   text-align: center;
   justify-content: center;
