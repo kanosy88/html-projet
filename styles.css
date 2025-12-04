@@ -132,42 +132,112 @@ ul {
 }
 
 /***************************************** LUCAS'S SECTION ******************************************/
-.Lucas-Content {
-  height: 100vh;
-}
-
 .Lucas-FirstPage {
+  background-color: rgb(0, 0, 0);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 100vh;
+  font-family: "GildaDisplay";
+  position: relative;
+  align-items: center;
 }
 
-.Lucas-FirstPage::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-image: url(images/italie/imgae\ landscape\ Italy.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.Lucas-TitleSubtitleText {
+  z-index: 2;
+  max-width: 60%;
+  padding: 10%;
+}
+
+.Lucas-WELCOM {
+  font-size: 60px;
+  letter-spacing: 8px;
+  line-height: 1;
+  font-weight: 1;
+  margin: 2%;
 }
 
 .Lucas-Title {
+  font-size: 180px;
+  margin: auto;
+  letter-spacing: 26px;
+  line-height: 1;
+  font-weight: 1;
+  filter: brightness(0.9);
+  filter: drop-shadow(0 0 10px);
+}
+
+.Lucas-TextSubtitle {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 1;
+  opacity: 0.7;
+}
+
+.Lucas-StatueImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  filter: brightness(0.9);
+  filter: drop-shadow(0 0 10px);
+}
+
+.Lucas-StatueFade {
+  background-color: #007a3d;
+  height: 500px;
+}
+
+.Lucas-SecondePage {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-top: 350px;
+  gap: 40px;
+  padding: 0 100px;
+}
+
+.Lucas-SubtitleItalieDescription {
+  border-style: groove;
+  border-color: rgb(255, 255, 255);
+  font-family: "GildaDisplay";
   text-align: center;
-  font-size: 300px;
-  color: #baa8a3;
-  font-family: "Times New Roman", Times, serif;
-  border-right: 3px solid #baa8a3;
-  border-left: 3px solid #baa8a3;
-  border-radius: 500px;
-  border-radius: 5%;
-  min-width: 30%;
-  text-shadow: 1px 1px 4px black;
-  box-shadow: 1px 1px 4px black;
+  font-size: 70px;
+  padding: 2%;
+  margin: 15% 15% 2% 15%;
+  max-width: 60%;
+}
+
+.Lucas-ItalyDescription {
+  font-family: "GildaDisplay";
+  letter-spacing: 2px;
+  text-indent: 50px;
+  text-transform: uppercase;
+  border-style: groove;
+  padding: 2%;
+  max-width: 80%;
+  z-index: 3;
+}
+
+.Lucas-ImageColise {
+  height: 300px;
+  filter: grayscale(100%) drop-shadow(0 0 10px white);
+  transition: 300ms;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Lucas-ImageColise:hover {
+  height: 60vh;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  z-index: 1;
+}
+
+.Lucas-RightFlexDirection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
 }
 
 /***************************************** BILLY'S SECTION ******************************************/
