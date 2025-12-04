@@ -515,7 +515,7 @@ label:hover {
   width: 100%;
   height: 160%;
   background-image: url("images/maroc/desert.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   filter: brightness(0.52);
 }
@@ -524,7 +524,7 @@ label:hover {
   text-align: center;
   font-size: 190px;
   font-weight: 900;
-  margin-top: 110px;
+  margin-top: 100px;
   opacity: 0.72;
   color: #ac690a;
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
@@ -708,6 +708,7 @@ th:nth-child(even) {
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
   color: #f2e6d8;
 }
+
 .Adam_ContainersRivers ul {
   padding: 50px;
   margin-left: 40px;
@@ -718,7 +719,73 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
+.Adam_Page3Containers {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.Adam_ContainersMapRivers {
+  align-items: center;
+  width: 370px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  color: #f2e6d8;
+}
+
+.Adam_MapRivers img {
+  width: 90%;
+  border-radius: 20px;
+  margin: 20px auto 10px;
+}
+
+.Adam_TextMapRivers {
+  text-align: center;
+  color: #f2e6d8;
+  font-size: 22px;
+  font-weight: 500;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+}
+
+.Adam_ContainersRiversPhoto {
+  align-items: center;
+  width: 370px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+  color: #f2e6d8;
+}
+
+.Adam_RiversPhoto img {
+  width: 90%;
+  border-radius: 20px;
+  margin: 20px auto 10px;
+}
+
+.Adam_TextRiversPhoto {
+  text-align: center;
+  color: #f2e6d8;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
 /***************************************** AARON'S SECTION ******************************************/
+/* to put an image in the background*/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
   background-position: center;
@@ -726,15 +793,7 @@ th:nth-child(even) {
   background-size: cover;
   background-attachment: fixed;
 }
-.Aaron-flags {
-  background-color: white;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  border-radius: 15px;
-}
-
+/* for texts of the body and a background for them*/
 .Aaron-text {
   background-color: rgba(51, 77, 55, 0.6);
   width: 70%;
@@ -744,7 +803,7 @@ th:nth-child(even) {
   font-size: 18px;
   line-height: 1.6;
 }
-
+/* its for  all the image of the HTML */
 .Aaron-image {
   display: block;
   margin: 10px auto;
@@ -754,6 +813,7 @@ th:nth-child(even) {
   opacity: 0, 5;
   text-shadow: #333;
 }
+/* this code is for all the title of the code*/
 .Aaron-title {
   color: rgb(231, 231, 231);
   text-align: center;
@@ -761,6 +821,8 @@ th:nth-child(even) {
   cursor: pointer;
   font-style: oblique;
 }
+
+/* this is the main title of the page*/
 .Aaron-maintitle {
   font-size: 100px;
   font-weight: 400;
@@ -773,12 +835,15 @@ th:nth-child(even) {
   border-radius: 15px;
   cursor: pointer;
 }
+
+/* thats the table of the code*/
 .table-Aaron {
   border: 2px solid;
   margin: auto;
   background-color: rgba(51, 77, 55, 0.6);
   border-collapse: collapse;
 }
+/* this is to put the border off the table*/
 .Aaron-th,
 .Aaron-td {
   border: 1px solid;
@@ -787,7 +852,7 @@ th:nth-child(even) {
 .Aaron-th {
   border: none;
 }
-
+/* i wanted to align the image in the same line*/
 .Container-history-aaron {
   background-color: rgba(51, 77, 55, 0.6);
   display: flex;
@@ -798,7 +863,7 @@ th:nth-child(even) {
   gap: 20px;
   border-radius: 15px;
 }
-
+/*to put the title of the history in the middle of the space*/
 .Aaron-history {
   text-align: center;
   width: 300px;
@@ -806,6 +871,7 @@ th:nth-child(even) {
 .Aaron-contain {
   margin-left: 275px;
 }
+/* i wanted to put this block on the right of the screen */
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
@@ -814,12 +880,13 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 20px;
 }
+/* it was to put them on the same lign and to align them*/
 .Aaron-list,
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
 }
-
+/* this code was to put the block on the left of the screen*/
 .Aaron-list {
   text-align: center;
   background-color: rgba(51, 77, 55, 0.6);
@@ -835,24 +902,7 @@ th:nth-child(even) {
   font-size: 20px;
   font-weight: 500;
 }
-.Aaron-radio {
-  transform: scale(2);
-  margin: 10px;
-  gap: 20px;
-}
-.Aaron-radio-label {
-  font-size: 30px; /* taille du texte */
-  font-weight: bold;
-  color: white;
-  margin-left: 10px; /* espace entre bouton et texte */
-}
-.Aaron-label {
-  display: block;
-  color: rgb(255, 255, 255);
-  cursor: pointer;
-  transition: 600ms;
-  font-size: 60px;
-}
+
 /* The forms*/
 
 .Aaron-forms {
@@ -866,16 +916,17 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 2px 6px;
 }
+/* my buttons and mini questions for the animation*/
 .Aaron-radio {
   transform: scale(2);
   margin: 10px;
   gap: 20px;
 }
 .Aaron-radio-label {
-  font-size: 30px; /* taille du texte */
+  font-size: 30px;
   font-weight: bold;
   color: white;
-  margin-left: 10px; /* espace entre bouton et texte */
+  margin-left: 10px; /* space between buttons */
 }
 .Aaron-label {
   display: block;
@@ -884,17 +935,16 @@ th:nth-child(even) {
   transition: 600ms;
   font-size: 60px;
 }
-
+/*the code to add the button submit*/
 .Aaron-button {
   background-color: #00000093;
   color: rgb(255, 255, 255);
-  padding: 15px 40px;
-  border-radius: 6px;
-  font-size: 18px;
-  font-weight: bold;
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-size: 25px;
   cursor: pointer;
   display: block;
-  margin: 0 auto;
+  margin: auto;
 }
 
 /***************************************** MIKOLAJ'S SECTION ******************************************/
