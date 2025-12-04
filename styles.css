@@ -1054,7 +1054,7 @@ th:nth-child(even) {
 }
 
 /*Code to seperate section of my website and to put item in the middle*/
-.boiteMiko {
+.BoxMiko {
   display: flex;
   gap: 2rem;
   padding: 0rem;
@@ -1077,17 +1077,17 @@ th:nth-child(even) {
 }
 
 /*code for the color of my link when he is normal */
-.lienMiko {
+.linkMiko {
   color: rgb(18, 6, 145);
 }
 
 /*code for the color of my link when he is normal */
-a.lienMiko:active {
+a.linkMiko:active {
   color: rgb(18, 6, 145);
 }
 
 /*code for the color of my link when clicked */
-a.lienMiko:visited {
+a.linkMiko:visited {
   color: red;
 }
 /*code for my image*/
@@ -1101,7 +1101,7 @@ a.lienMiko:visited {
   border-style: solid;
 }
 /* code for my lists*/
-#listeMiko {
+#listMiko {
   display: block;
   text-align: center;
   list-style-type: none;
@@ -1116,7 +1116,7 @@ a.lienMiko:visited {
 }
 
 /*code for my table*/
-.tableMiko,
+.tablesMiko,
 .thMiko,
 .tdMiko,
 .tdMiko1 {
@@ -1154,7 +1154,7 @@ a.lienMiko:visited {
   height: 5rem;
 }
 /*code for my flag of poland*/
-.imagePologneMiko {
+.imagePolandMiko {
   display: block;
   border: #ffffff;
   height: 25rem;
