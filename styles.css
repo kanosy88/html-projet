@@ -131,7 +131,7 @@ ul {
   margin: 0;
 }
 
-/***************************************** VAN CAUWELAERT LUCAS'S SECTION ******************************************/
+/***************************************** LUCAS'S SECTION ******************************************/
 .Lucas-Content {
   height: 100vh;
 }
@@ -170,7 +170,7 @@ ul {
   box-shadow: 1px 1px 4px black;
 }
 
-/***************************************** AGBO BILLY'S SECTION ******************************************/
+/***************************************** BILLY'S SECTION ******************************************/
 
 /* content */
 
@@ -492,7 +492,7 @@ label:hover {
   transition: transform 300ms;
 }
 
-/***************************************** BENABDELHAK ADAM'S SECTION ******************************************/
+/***************************************** ADAM'S SECTION ******************************************/
 
 .Adam_Content {
   display: flex;
@@ -854,7 +854,7 @@ th:nth-child(even) {
   border-radius: 20px;
 }
 
-/***************************************** MIKOBI AARON'S SECTION ******************************************/
+/***************************************** AARON'S SECTION ******************************************/
 /* to put an image in the background*/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
@@ -1017,7 +1017,7 @@ th:nth-child(even) {
   margin: auto;
 }
 
-/***************************************** KOWAL MIKOLAJ'S SECTION ******************************************/
+/***************************************** MIKOLAJ'S SECTION ******************************************/
 #BodyMiko {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -1067,13 +1067,6 @@ th:nth-child(even) {
   width: 25rem;
   height: 25rem;
   font-weight: bolder;
-}
-
-a.lienMiko:active {
-  color: rgb(0, 0, 0);
-}
-a.lienMiko:visited {
-  color: red;
 }
 
 .imageMiko {
@@ -1139,29 +1132,7 @@ a.lienMiko:visited {
   border-color: #ffffff;
   border-style: solid;
 }
-.MikotextImage {
-  position: absolute;
-  font-size: 1.5rem;
-  font-weight: lighter;
-  color: #ffffff;
-  font-family: "GIll Sans" Arial, sans-serif;
-  text-align: center;
-  font-weight: bolder;
-  align-items: center;
-  justify-content: center;
-  width: 40rem;
-  opacity: 0;
-  text-shadow: black;
-}
-.MikotextImage:hover {
-  opacity: 1;
-}
-.PimageMiko {
-  text-align: center;
-  justify-content: center;
-  align-content: center;
-}
-/***************************************** MANU CLIFFORD'S SECTION ******************************************/
+/***************************************** CLIFFORD'S SECTION ******************************************/
 
 .main-nav ul {
   list-style: none;
