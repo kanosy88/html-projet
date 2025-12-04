@@ -725,7 +725,6 @@ th:nth-child(even) {
   font-size: 30px;
 }
 
-<<<<<<< HEAD
 .Adam_ContainersMapRivers {
   align-items: center;
   width: 370px;
@@ -773,7 +772,6 @@ th:nth-child(even) {
   width: 90%;
   border-radius: 20px;
   margin: 20px auto 10px;
-  display: block;
 }
 
 .Adam_TextRiversPhoto {
@@ -784,8 +782,6 @@ th:nth-child(even) {
   margin-bottom: 20px;
 }
 
-=======
->>>>>>> ad304482fd2d6a3e030f68d4079c3cd11d0cd3f1
 /***************************************** AARON'S SECTION ******************************************/
 /* to put an image in the background*/
 .Aaron-body {
