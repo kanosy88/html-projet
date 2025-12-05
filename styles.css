@@ -116,64 +116,327 @@ p {
   margin: 0;
 }
 
-/***************************************** FOOTER SECTION ******************************************/
-footer {
-  display: flex;
-  flex-direction: column;
-  padding: 30px;
-  font-size: 14px;
-  color: gray;
-  background-color: black;
-  gap: 6px;
-}
-
-ul {
-  margin: 0;
-}
-
 /***************************************** LUCAS'S SECTION ******************************************/
-.Lucas-Content {
-  height: 100vh;
-}
-
+/* First page css */
 .Lucas-FirstPage {
+  background-color: rgb(0, 0, 0);
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  height: 100vh;
+  font-family: "GildaDisplay";
+  position: relative;
+  align-items: center;
 }
 
-.Lucas-FirstPage::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-image: url(images/italie/imgae\ landscape\ Italy.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+.Lucas-TitleSubtitleText {
+  z-index: 2;
+  max-width: 60%;
+  padding: 10%;
+}
+
+.Lucas-WELCOM {
+  font-size: 60px;
+  letter-spacing: 8px;
+  line-height: 1;
+  font-weight: 1;
+  margin: 2%;
 }
 
 .Lucas-Title {
-  text-align: center;
-  font-size: 300px;
-  color: #baa8a3;
-  font-family: "Times New Roman", Times, serif;
-  border-right: 3px solid #baa8a3;
-  border-left: 3px solid #baa8a3;
-  border-radius: 500px;
-  border-radius: 5%;
-  min-width: 30%;
-  text-shadow: 1px 1px 4px black;
-  box-shadow: 1px 1px 4px black;
+  font-size: 180px;
+  margin: auto;
+  letter-spacing: 26px;
+  line-height: 1;
+  font-weight: 1;
+  filter: brightness(0.9) drop-shadow(0 0 10px);
 }
 
+.Lucas-TextSubtitle {
+  font-size: 40px;
+  line-height: 1;
+  font-weight: 1;
+  opacity: 0.7;
+}
+
+.Lucas-StatueImage {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 1;
+  filter: brightness(0.9);
+  filter: drop-shadow(0 0 10px);
+}
+
+.Lucas-StatueFade {
+  background-color: #007a3d;
+  height: 500px;
+}
+/* Second page css */
+.Lucas-SecondPage {
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  margin-top: 350px;
+  gap: 40px;
+  padding: 0 100px;
+}
+
+.Lucas-SubtitleItaliyDescription {
+  border-style: groove;
+  border-color: rgb(255, 255, 255);
+  font-family: "GildaDisplay";
+  text-align: center;
+  font-size: 60px;
+  padding: 2%;
+  margin: 15% 15% 2% 15%;
+  max-width: 60%;
+  transition: 300ms;
+}
+
+.Lucas-ItalyDescription {
+  font-family: "GildaDisplay";
+  letter-spacing: 2px;
+  text-indent: 50px;
+  text-transform: uppercase;
+  border-style: groove;
+  padding: 2%;
+  max-width: 80%;
+  z-index: 3;
+}
+
+.Lucas-ImageColosseum {
+  height: 300px;
+  filter: grayscale(100%) drop-shadow(0 0 10px white);
+  transition: 300ms;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Lucas-ImageColosseum:hover {
+  height: 60vh;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  z-index: 1;
+}
+
+.Lucas-RightFlexDirection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+/* Third page css */
+.Lucas-ThirdPage {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 80%;
+  margin: 40px auto;
+}
+
+.Lucas-ItalyTable {
+  border: 1px solid rgba(255, 255, 255, 0.678);
+  border-width: 3px;
+  border-collapse: collapse;
+  font-family: "GildaDisplay";
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+  width: 75%;
+  height: auto;
+}
+
+.Lucas-ItalyTable th {
+  padding: 20px 20px;
+  border-bottom: 1px solid #333;
+  font-weight: bold;
+  text-align: center;
+  width: 45%;
+}
+
+.Lucas-ItalyTable td:nth-child(even) {
+  border-bottom: 1px solid #333;
+  background-color: rgba(83, 83, 83, 0.288);
+  text-align: center;
+}
+
+.Lucas-ItalyTable tr,
+td {
+  white-space: nowrap;
+}
+
+.Lucas-ImageNextToTable {
+  width: 500px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: transform 0.4 ease, filter 0.4 ease;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+  transition: 300ms;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.Lucas-ImageNextToTable:hover {
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  transform: scale(1.5);
+}
+/* Fourth page css */
+.Lucas-FourthPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 80px;
+  padding: 50px;
+}
+
+.Lucas-ListActivity {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.Lucas-ListActivity li {
+  color: white;
+  padding: 15px 20px;
+  margin: 15px 0;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+  width: 150px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 300ms;
+  font-family: "GildaDisplay";
+  height: 60px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.Lucas-ListActivity li:hover {
+  background: rgba(255, 255, 255, 0.295);
+  height: 700px;
+  min-width: 1200px;
+  color: transparent;
+  background-size: 110%;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(0%) drop-shadow(0 0 20px white);
+  transform: scale(1);
+  font-size: 0px;
+  padding: 0;
+}
+
+.Lucas-ListActivity li:nth-child(1):hover {
+  background-image: url(images/italie/Gonde\ Venise.jpg);
+}
+.Lucas-ListActivity li:nth-child(2):hover {
+  background-image: url(images/italie/Musée\ vatican.jpg);
+}
+.Lucas-ListActivity li:nth-child(3):hover {
+  background-image: url(images/italie/cinque\ terre.jpg);
+}
+.Lucas-ListActivity li:nth-child(4):hover {
+  background-image: url(images/italie/Florence\ italie.jpg);
+}
+.Lucas-ListActivity li:nth-child(5):hover {
+  background-image: url(images/italie/italy\ trip\ milan.jpg);
+}
+.Lucas-ListActivity li:nth-child(6):hover {
+  background-image: url(images/italie/Pompei_\ cena\ gourmet\ con\ vista\ sugli\ scavi.jpg);
+}
+
+/* form css  */
+.Lucas-FormItaly {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-family: "GildaDisplay";
+  align-items: center;
+  padding: 40px;
+}
+
+.Lucas-SubtitleForm {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  max-width: 250px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1% 2% 1% 2%;
+}
+
+.Lucas-FormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "GildaDisplay";
+}
+
+.Lucas-FormContent label {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(183, 183, 183);
+}
+
+.Lucas-FormContent input,
+textarea {
+  width: 96%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Lucas-FormContent textarea {
+  height: 120px;
+}
+
+.Lucas-FormBtn {
+  width: 150px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 300ms;
+}
+
+.Lucas-FormBtn:hover {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  font-size: 20px;
+}
+
+.Lucas-DivForm {
+  border-style: solid;
+  border-width: 1px;
+  width: 600px;
+  padding: 30px;
+}
+
+.Lucas-ItalyMoreInfo {
+  border-style: solid;
+  box-shadow: #d1ecf1;
+  border-width: 1px;
+  margin: 3%;
+  width: 600px;
+  height: 70px;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+}
+
+.Lucas-ItalyMoreInfo a {
+  font-size: 40px;
+}
 /***************************************** BILLY'S SECTION ******************************************/
 
-/* content */
-
+/* main content container with scroll snap */
 .billy-content {
   display: flex;
   flex-direction: column;
@@ -182,6 +445,7 @@ ul {
   scroll-snap-type: y proximity;
 }
 
+/* bottom gradient overlay */
 .billy-content::before {
   content: "";
   position: fixed;
@@ -199,14 +463,14 @@ ul {
   pointer-events: none;
 }
 
-/* page */
-
+/* based page layout */
 .billy-page {
   min-height: 100vh;
   scroll-snap-align: start;
   padding: 0 100px;
 }
 
+/* landing page with background image */
 .billy-landing {
   display: flex;
   justify-content: space-around;
@@ -217,6 +481,7 @@ ul {
   padding: 0;
 }
 
+/* page background (fixed) */
 .billy-landing::before {
   content: "";
   position: absolute;
@@ -231,8 +496,7 @@ ul {
   filter: brightness(0.4);
 }
 
-/* title & subtitle */
-
+/* main title with animation */
 .billy-title {
   font-size: 200px;
   font-weight: 900;
@@ -245,6 +509,7 @@ ul {
   letter-spacing: 0.1em;
 }
 
+/* title animation when page open */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -256,6 +521,7 @@ ul {
   }
 }
 
+/* section subtitle */
 .billy-subtitle {
   text-align: center;
   font-size: 100px;
@@ -267,8 +533,7 @@ ul {
   color: white;
 }
 
-/* citation */
-
+/* citation cards container */
 .citation-container {
   display: flex;
   justify-content: center;
@@ -283,6 +548,7 @@ ul {
   gap: 20px;
 }
 
+/* individual citation card */
 .citation {
   display: flex;
   flex-direction: column;
@@ -295,6 +561,7 @@ ul {
   padding: 10px;
 }
 
+/* citation hover effect */
 .citation:hover {
   transform: scale(1.35);
   opacity: 1;
@@ -303,14 +570,14 @@ ul {
   box-shadow: 0 0 100px rgba(0, 0, 0, 1), 0 0 300px rgba(0, 0, 0, 1);
 }
 
+/* citation author styling */
 .citation-author {
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
 }
 
-/* table */
-
+/* data table styling */
 .billy-table {
   border-collapse: collapse;
   width: 100%;
@@ -318,6 +585,7 @@ ul {
   font-weight: 100;
 }
 
+/*  data cells */
 .billy-td,
 .billy-th {
   border: 1px solid #dddddd;
@@ -327,28 +595,31 @@ ul {
   cursor: default;
 }
 
+/*  header */
 .billy-th {
   border: none;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.4);
 }
 
+/*  data cells */
 .billy-td {
   color: rgba(255, 255, 255, 0.827);
 }
 
+/*  cell hover glow effect */
 .billy-td:hover {
   text-shadow: 0px 0px 25px rgb(255, 255, 255), 0px 0px 25px rgb(255, 255, 255),
     0px 0px 100px rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
+/* alternating row background */
 .billy-tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* monument */
-
+/* monument cards container */
 .monument-container {
   display: flex;
   justify-content: center;
@@ -356,15 +627,17 @@ ul {
   margin-bottom: 100px;
 }
 
+/* monument card individual */
 .monument {
   width: 100%;
   border: 1px solid white;
   transition: box-shadow 300ms, transform 300ms, color 300ms;
   margin: 0 20px;
-  position: relative; /* needed for the description to be well placed */
+  position: relative;
   color: rgba(255, 255, 255, 0);
 }
 
+/* monument hover effect */
 .monument:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 100px rgba(255, 255, 255, 1);
@@ -372,18 +645,21 @@ ul {
   z-index: 10;
 }
 
+/* monument image */
 .billy-monument-image {
   width: 100%;
   height: 100%;
   transition: filter 300ms;
 }
 
+/* monument image hover blur */
 .billy-monument-image:hover {
   width: 100%;
   height: 100%;
   filter: brightness(0.5) blur(5px);
 }
 
+/* monument description when hover */
 .billy-monument-description {
   position: absolute;
   top: 15%;
@@ -396,11 +672,13 @@ ul {
   font-weight: 200;
 }
 
+/* monument name styling */
 .monument-name {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
+/* to make the text fit in the image when bigger screen */
 @media (min-width: 1024px) {
   .billy-monument-description {
     top: 25%;
@@ -408,6 +686,7 @@ ul {
   }
 }
 
+/* to make the text fit in the image */
 @media (min-width: 1440px) {
   .billy-monument-description {
     top: 50px;
@@ -415,8 +694,7 @@ ul {
   }
 }
 
-/* initial part */
-
+/* tabs container */
 .tabs {
   display: flex;
   flex-direction: row;
@@ -426,6 +704,7 @@ ul {
   position: relative;
 }
 
+/* tab content panel */
 .tab-content {
   width: 100%;
   position: absolute;
@@ -442,10 +721,12 @@ ul {
   font-weight: 300;
 }
 
+/* hidden radio input for tab switching */
 .tab-switch {
   display: none;
 }
 
+/* active tab label styling */
 .tab-switch:checked + label {
   color: rgba(255, 255, 255, 1);
   text-shadow: 0px 0px 25px rgb(255, 255, 255),
@@ -455,23 +736,27 @@ ul {
   transform: translateY(-1rem);
 }
 
+/* show active tab content */
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
 }
 
-label {
+/* tab label */
+.tab-label {
   display: block;
   color: rgba(255, 255, 255, 0.22);
   cursor: pointer;
   transition: all 0.25s;
 }
 
-label:hover {
+/* tab hover effect */
+.tab-level:hover {
   transform: translateY(-1rem);
 }
 
+/* tab content title */
 .tab-content-title {
   margin: 0;
   margin-bottom: 10px;
@@ -480,25 +765,179 @@ label:hover {
   font-size: 50px;
 }
 
+/* tab content text */
 .tab-content-text {
   font-size: 2.3vh;
   line-height: 1.2;
   text-align: justify;
 }
 
+/* tab content links */
 .tab-content-link {
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
   transition: transform 300ms;
 }
 
+/* feedback page */
+.feedback-page {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  justify-content: space-between;
+}
+
+/* feedback title section */
+.feedback-title-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  padding-right: 50px;
+  gap: 10px;
+  position: relative;
+}
+
+/*  background image */
+.feedback-title-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/china/china-roof.png");
+  background-size: contain;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transform: scaleX(-1);
+  filter: blur(2px);
+}
+
+/* feedback main title */
+.feedback-title {
+  font-size: 7rem;
+  margin: 0;
+  line-height: 90%;
+  font-weight: 150;
+  font-style: italic;
+}
+
+/* feedback subtitle */
+.feedback-subtitle {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 150;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+/* feedback form inputs wrapper */
+.feedback-inputs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+/* feedback form section */
+.feedback-form {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 50px;
+  padding-right: 100px;
+  width: 60%;
+  background: linear-gradient(
+    to left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  gap: 40px;
+}
+
+/* submit button */
+.feedback-submit-button {
+  display: inline-flex;
+  align-items: center;
+  background: none;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  border: none;
+  cursor: pointer;
+  align-self: flex-start;
+  gap: 10px;
+  transition: all 300ms;
+}
+
+/* submit button hover effect */
+.feedback-submit-button:hover {
+  gap: 20px;
+}
+
+/* form input wrapper */
+.feedback-input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* input label */
+.feedback-input-label {
+  font-size: 26px;
+  font-weight: 300;
+  color: white;
+}
+
+/* form input field */
+.feedback-input {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 38px;
+  border: none;
+  padding: 0;
+  font-size: 22px;
+  background: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  padding-block: 0px;
+  transition: border-bottom-color 300ms;
+}
+
+/* input focus state */
+.feedback-input:focus {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+  outline: none;
+}
+
+/* input with content */
+.feedback-input:not(:placeholder-shown) {
+  border-bottom: 2px solid rgba(255, 255, 255, 1);
+}
+
+/* input placeholder */
+.feedback-input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /***************************************** ADAM'S SECTION ******************************************/
+
 
 .Adam_Content {
   display: flex;
   flex-direction: column;
   min-height: 300vh;
   text-align: center;
+  z-index: 1;
 }
 
 .Adam_Landing {
@@ -509,17 +948,19 @@ label:hover {
 .Adam_Landing::before {
   content: "";
   position: fixed;
+  z-index: -1;
   background-repeat: no-repeat;
   top: 0;
   left: 0;
   width: 100%;
   height: 160%;
-  background-image: url("images/maroc/desert.jpg");
+  background-image: url("images/Morocco/Desert.jpg");
   background-size: cover;
   background-position: center;
   filter: brightness(0.52);
 }
 
+/* Morocco title */
 .Adam_Title {
   text-align: center;
   font-size: 190px;
@@ -530,6 +971,7 @@ label:hover {
   text-shadow: 3px 3px 6px rgba(26, 26, 26, 0.849);
 }
 
+/* URL to Wikipedia Morocco */
 .Adam_LearnMore {
   margin-top: 70px;
   font-size: 25px;
@@ -542,7 +984,6 @@ label:hover {
   padding: 20px 40px 20px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
@@ -554,6 +995,7 @@ label:hover {
   transform: scale(1.06);
 }
 
+/* Description box */
 .Adam_Description {
   margin-left: 8%;
   margin-right: 8%;
@@ -568,7 +1010,6 @@ label:hover {
   padding: 0px 0px 10px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
@@ -580,6 +1021,7 @@ label:hover {
   margin: 100px;
 }
 
+/* Population title */
 .Adam_TitlePopulation {
   text-align: center;
   font-size: 155px;
@@ -590,7 +1032,7 @@ label:hover {
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
 }
 
-.Adam_Page2Containers {
+.Adam_Page2containers {
   display: flex;
   justify-content: center;
   gap: 75px;
@@ -606,7 +1048,6 @@ label:hover {
   padding: 32px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
@@ -632,13 +1073,14 @@ label:hover {
   height: 250px;
   background: rgba(255, 255, 255, 0.18);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #f2e6d8;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
 }
 
 .Adam_TotalPopulationText {
@@ -651,7 +1093,6 @@ label:hover {
   padding: 25px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.35);
   border-radius: 30px;
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
@@ -684,6 +1125,7 @@ th:nth-child(even) {
   background-color: #00000033;
 }
 
+/* Rivers title */
 .Adam_TitleRivers {
   text-align: center;
   font-size: 170px;
@@ -700,12 +1142,17 @@ th:nth-child(even) {
   margin: auto;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
   color: #f2e6d8;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_ContainersRivers:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.524), 0 0 60px rgba(255, 255, 255, 0.477);
+  transform: scale(1.05);
 }
 
 .Adam_ContainersRivers ul {
@@ -731,12 +1178,17 @@ th:nth-child(even) {
   width: 370px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
   color: #f2e6d8;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_ContainersMapRivers:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.524), 0 0 60px rgba(255, 255, 255, 0.477);
+  transform: scale(1.05);
 }
 
 .Adam_MapRivers img {
@@ -760,12 +1212,17 @@ th:nth-child(even) {
   width: 370px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
     inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
   color: #f2e6d8;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_ContainersRiversPhoto:hover {
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.524), 0 0 60px rgba(255, 255, 255, 0.477);
+  transform: scale(1.05);
 }
 
 .Adam_RiversPhoto img {
@@ -783,6 +1240,7 @@ th:nth-child(even) {
   margin-bottom: 10px;
 }
 
+/* Food title */
 .Adam_FoodTitle {
   text-align: center;
   font-size: 155px;
@@ -798,7 +1256,6 @@ th:nth-child(even) {
   height: 220px;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
   border-radius: 0px 30px 30px 0px;
   border: 1px solid rgba(255, 255, 255, 0.35);
   transform: translateX(-45%);
@@ -806,6 +1263,7 @@ th:nth-child(even) {
   transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
 }
 
+/* animation of food box and food image */
 .Adam_FoodBox:hover {
   transform: translateX(0);
   box-shadow: 0 0 25px rgb(255, 255, 255), 0 0 60px rgb(206, 122, 53);
@@ -838,7 +1296,6 @@ th:nth-child(even) {
   padding: 30px;
   background: rgba(255, 255, 255, 0.12);
   backdrop-filter: blur(30px);
-  -webkit-backdrop-filter: blur(30px);
   border-radius: 30px 0px 0px 30px;
   border: 1px solid rgba(255, 255, 255, 0.35);
 }
@@ -852,6 +1309,125 @@ th:nth-child(even) {
   height: 192px;
   object-fit: cover;
   border-radius: 20px;
+}
+
+/* Fill title */
+.Adam_FillTitle {
+  text-align: center;
+  font-size: 70px;
+  margin-top: 200px;
+  margin-bottom: 0;
+  opacity: 0.75;
+  color: #f2e6d8;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
+}
+
+/* Place where you fill in personal information */
+.Adam_ContainersFill {
+  margin-top: 30px;
+  min-width: 20%;
+  font-size: 40px;
+  color: #f2e6d8;
+  position: relative;
+  opacity: 0.82;
+  text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.702);
+  padding: 0px 0px 10px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(255, 255, 255, 0.1), 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.Adam_NameFill {
+  width: 10%;
+  padding: 14px 18px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  color: #f2e6d8;
+  font-size: 30px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Adam_MailFill {
+  width: 20%;
+  padding: 20px 18px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  color: #f2e6d8;
+  font-size: 28px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Adam_CommentFill {
+  width: 30%;
+  padding: 10px 10px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 14px;
+  color: #f2e6d8;
+  font-size: 20px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  height: 120px;
+}
+
+/* animations */
+.Adam_NameFill::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Adam_MailFill::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Adam_CommentFill::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.Adam_NameFill:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.Adam_MailFill:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.Adam_CommentFill:focus {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.Adam_ContainersBoutton {
+  margin-top: 80px;
+  margin-bottom: 35px;
+  text-align: center;
+}
+
+/* Personal information button */
+.Adam_Button {
+  padding: 15px 50px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 18px;
+  color: #f2e6d8;
+  font-size: 23px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Adam_Button:hover {
+  transform: scale(1);
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.658);
 }
 
 /***************************************** AARON'S SECTION ******************************************/
@@ -1504,4 +2080,20 @@ a.linkMiko:visited {
   .palestine-main h1 {
     font-size: 2rem;
   }
+}
+
+/***************************************** FOOTER SECTION ******************************************/
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  font-size: 14px;
+  color: gray;
+  background-color: black;
+  gap: 6px;
+  text-align: left;
+}
+
+ul {
+  margin: 0;
 }
