@@ -338,7 +338,7 @@ td {
   background-size: 110%;
   background-position: center;
   background-repeat: no-repeat;
-  filter: grayscale(0%);
+  filter: grayscale(0%) drop-shadow(0 0 20px white);
   transform: scale(1);
   font-size: 0px;
   padding: 0;
@@ -351,19 +351,43 @@ td {
   background-image: url(images/italie/Musée\ vatican.jpg);
 }
 .Lucas-ListActivity li:nth-child(3):hover {
-  background-image: url(images/italie/Sistine\ Chapel\,\ Rome.jpg);
-}
-.Lucas-ListActivity li:nth-child(4):hover {
   background-image: url(images/italie/cinque\ terre.jpg);
 }
-.Lucas-ListActivity li:nth-child(5):hover {
+.Lucas-ListActivity li:nth-child(4):hover {
   background-image: url(images/italie/Florence\ italie.jpg);
 }
-.Lucas-ListActivity li:nth-child(6):hover {
+.Lucas-ListActivity li:nth-child(5):hover {
   background-image: url(images/italie/italy\ trip\ milan.jpg);
 }
-.Lucas-ListActivity li:nth-child(7):hover {
+.Lucas-ListActivity li:nth-child(6):hover {
   background-image: url(images/italie/Pompei_\ cena\ gourmet\ con\ vista\ sugli\ scavi.jpg);
+}
+.Lucas-FormItalie {
+  width: 400px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-family: "GildaDisplay";
+  justify-content: center;
+}
+
+.Lucas-SubtitleForm {
+  text-align: center;
+  margin: 30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.Lucas-FormContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.Lucas-FormContent label {
+  font-size: 20px;
+  text-transform: uppercase;
+  opacity: 0.7;
 }
 
 /***************************************** BILLY'S SECTION ******************************************/
