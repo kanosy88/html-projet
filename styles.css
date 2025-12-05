@@ -198,7 +198,7 @@ ul {
   padding: 0 100px;
 }
 
-.Lucas-SubtitleItalieDescription {
+.Lucas-SubtitleItaliyDescription {
   border-style: groove;
   border-color: rgb(255, 255, 255);
   font-family: "GildaDisplay";
@@ -221,7 +221,7 @@ ul {
   z-index: 3;
 }
 
-.Lucas-ImageColise {
+.Lucas-ImageColosseum {
   height: 300px;
   filter: grayscale(100%) drop-shadow(0 0 10px white);
   transition: 300ms;
@@ -229,7 +229,7 @@ ul {
   border-width: 1px;
 }
 
-.Lucas-ImageColise:hover {
+.Lucas-ImageColosseum:hover {
   height: 60vh;
   filter: grayscale(0%) drop-shadow(0 0 50px white);
   z-index: 1;
@@ -362,7 +362,7 @@ td {
 .Lucas-ListActivity li:nth-child(6):hover {
   background-image: url(images/italie/Pompei_\ cena\ gourmet\ con\ vista\ sugli\ scavi.jpg);
 }
-.Lucas-FormItalie {
+.Lucas-FormItaly {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
