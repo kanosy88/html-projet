@@ -1118,22 +1118,6 @@ a.linkMiko:visited {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-/*code for my form*/
-.formMiko {
-  padding: 0.5rem;
-  font-weight: lighter;
-  text-align: center;
-  border: 0.5rem;
-  border-color: white;
-  border-style: double;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-/*code for my inputs*/
-.textareaMiko {
-  width: 50rem;
-  height: 5rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
 /*code for my flag of poland*/
 .imagePolandMiko {
   display: block;
@@ -1193,6 +1177,22 @@ a.linkMiko:visited {
 .tdMiko1 {
   font-size: 1.25rem;
   font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*code for my form*/
+.formMiko {
+  padding: 0.5rem;
+  font-weight: lighter;
+  text-align: center;
+  border: 0.5rem;
+  border-color: white;
+  border-style: double;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*code for my inputs*/
+.textareaMiko {
+  width: 50rem;
+  height: 5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 /***************************************** MANU CLIFFORD'S SECTION ******************************************/
