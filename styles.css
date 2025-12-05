@@ -172,8 +172,7 @@ ul {
 
 /***************************************** BILLY'S SECTION ******************************************/
 
-/* content */
-
+/* main content container with scroll snap */
 .billy-content {
   display: flex;
   flex-direction: column;
@@ -182,6 +181,7 @@ ul {
   scroll-snap-type: y proximity;
 }
 
+/* bottom gradient overlay */
 .billy-content::before {
   content: "";
   position: fixed;
@@ -199,14 +199,14 @@ ul {
   pointer-events: none;
 }
 
-/* page */
-
+/* based page layout */
 .billy-page {
   min-height: 100vh;
   scroll-snap-align: start;
   padding: 0 100px;
 }
 
+/* landing page with background image */
 .billy-landing {
   display: flex;
   justify-content: space-around;
@@ -217,6 +217,7 @@ ul {
   padding: 0;
 }
 
+/* page background (fixed) */
 .billy-landing::before {
   content: "";
   position: absolute;
@@ -231,8 +232,7 @@ ul {
   filter: brightness(0.4);
 }
 
-/* title & subtitle */
-
+/* main title with animation */
 .billy-title {
   font-size: 200px;
   font-weight: 900;
@@ -245,6 +245,7 @@ ul {
   letter-spacing: 0.1em;
 }
 
+/* title animation when page open */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -256,6 +257,7 @@ ul {
   }
 }
 
+/* section subtitle */
 .billy-subtitle {
   text-align: center;
   font-size: 100px;
@@ -267,8 +269,7 @@ ul {
   color: white;
 }
 
-/* citation */
-
+/* citation cards container */
 .citation-container {
   display: flex;
   justify-content: center;
@@ -283,6 +284,7 @@ ul {
   gap: 20px;
 }
 
+/* individual citation card */
 .citation {
   display: flex;
   flex-direction: column;
@@ -295,6 +297,7 @@ ul {
   padding: 10px;
 }
 
+/* citation hover effect */
 .citation:hover {
   transform: scale(1.35);
   opacity: 1;
@@ -303,14 +306,14 @@ ul {
   box-shadow: 0 0 100px rgba(0, 0, 0, 1), 0 0 300px rgba(0, 0, 0, 1);
 }
 
+/* citation author styling */
 .citation-author {
   margin-top: 20px;
   font-weight: 500;
   font-size: 18px;
 }
 
-/* table */
-
+/* data table styling */
 .billy-table {
   border-collapse: collapse;
   width: 100%;
@@ -318,6 +321,7 @@ ul {
   font-weight: 100;
 }
 
+/*  data cells */
 .billy-td,
 .billy-th {
   border: 1px solid #dddddd;
@@ -327,28 +331,31 @@ ul {
   cursor: default;
 }
 
+/*  header */
 .billy-th {
   border: none;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.4);
 }
 
+/*  data cells */
 .billy-td {
   color: rgba(255, 255, 255, 0.827);
 }
 
+/*  cell hover glow effect */
 .billy-td:hover {
   text-shadow: 0px 0px 25px rgb(255, 255, 255), 0px 0px 25px rgb(255, 255, 255),
     0px 0px 100px rgb(255, 255, 255);
   color: rgb(255, 255, 255);
 }
 
+/* alternating row background */
 .billy-tr:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* monument */
-
+/* monument cards container */
 .monument-container {
   display: flex;
   justify-content: center;
@@ -356,15 +363,17 @@ ul {
   margin-bottom: 100px;
 }
 
+/* monument card individual */
 .monument {
   width: 100%;
   border: 1px solid white;
   transition: box-shadow 300ms, transform 300ms, color 300ms;
   margin: 0 20px;
-  position: relative; /* needed for the description to be well placed */
+  position: relative;
   color: rgba(255, 255, 255, 0);
 }
 
+/* monument hover effect */
 .monument:hover {
   color: rgba(255, 255, 255, 1);
   box-shadow: 0 0 100px rgba(255, 255, 255, 1);
@@ -372,18 +381,21 @@ ul {
   z-index: 10;
 }
 
+/* monument image */
 .billy-monument-image {
   width: 100%;
   height: 100%;
   transition: filter 300ms;
 }
 
+/* monument image hover blur */
 .billy-monument-image:hover {
   width: 100%;
   height: 100%;
   filter: brightness(0.5) blur(5px);
 }
 
+/* monument description when hover */
 .billy-monument-description {
   position: absolute;
   top: 15%;
@@ -396,11 +408,13 @@ ul {
   font-weight: 200;
 }
 
+/* monument name styling */
 .monument-name {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
+/* to make the text fit in the image when bigger screen */
 @media (min-width: 1024px) {
   .billy-monument-description {
     top: 25%;
@@ -408,6 +422,7 @@ ul {
   }
 }
 
+/* to make the text fit in the image */
 @media (min-width: 1440px) {
   .billy-monument-description {
     top: 50px;
@@ -415,8 +430,7 @@ ul {
   }
 }
 
-/* initial part */
-
+/* tabs container */
 .tabs {
   display: flex;
   flex-direction: row;
@@ -426,6 +440,7 @@ ul {
   position: relative;
 }
 
+/* tab content panel */
 .tab-content {
   width: 100%;
   position: absolute;
@@ -442,10 +457,12 @@ ul {
   font-weight: 300;
 }
 
+/* hidden radio input for tab switching */
 .tab-switch {
   display: none;
 }
 
+/* active tab label styling */
 .tab-switch:checked + label {
   color: rgba(255, 255, 255, 1);
   text-shadow: 0px 0px 25px rgb(255, 255, 255),
@@ -455,12 +472,14 @@ ul {
   transform: translateY(-1rem);
 }
 
+/* show active tab content */
 .tab-switch:checked + label + .tab-content {
   z-index: 2;
   opacity: 1;
   transition: all 0.35s;
 }
 
+/* tab label */
 .tab-label {
   display: block;
   color: rgba(255, 255, 255, 0.22);
@@ -468,10 +487,12 @@ ul {
   transition: all 0.25s;
 }
 
+/* tab hover effect */
 .tab-level:hover {
   transform: translateY(-1rem);
 }
 
+/* tab content title */
 .tab-content-title {
   margin: 0;
   margin-bottom: 10px;
@@ -480,20 +501,21 @@ ul {
   font-size: 50px;
 }
 
+/* tab content text */
 .tab-content-text {
   font-size: 2.3vh;
   line-height: 1.2;
   text-align: justify;
 }
 
+/* tab content links */
 .tab-content-link {
   color: rgba(255, 255, 255, 1);
   text-decoration: underline;
   transition: transform 300ms;
 }
 
-/* form-part */
-
+/* feedback page */
 .feedback-page {
   background-color: rgba(0, 0, 0, 0.6);
   display: flex;
@@ -504,6 +526,7 @@ ul {
   justify-content: space-between;
 }
 
+/* feedback title section */
 .feedback-title-container {
   width: 100%;
   height: 100vh;
@@ -516,6 +539,7 @@ ul {
   position: relative;
 }
 
+/*  background image */
 .feedback-title-container::before {
   content: "";
   position: absolute;
@@ -532,6 +556,7 @@ ul {
   filter: blur(2px);
 }
 
+/* feedback main title */
 .feedback-title {
   font-size: 7rem;
   margin: 0;
@@ -540,6 +565,7 @@ ul {
   font-style: italic;
 }
 
+/* feedback subtitle */
 .feedback-subtitle {
   font-size: 2rem;
   margin: 0;
@@ -547,6 +573,7 @@ ul {
   color: rgba(255, 255, 255, 0.65);
 }
 
+/* feedback form inputs wrapper */
 .feedback-inputs-container {
   display: flex;
   flex-direction: column;
@@ -555,6 +582,7 @@ ul {
   gap: 45px;
 }
 
+/* feedback form section */
 .feedback-form {
   height: 100vh;
   display: flex;
@@ -571,6 +599,7 @@ ul {
   gap: 40px;
 }
 
+/* submit button */
 .feedback-submit-button {
   display: inline-flex;
   align-items: center;
@@ -585,10 +614,12 @@ ul {
   transition: all 300ms;
 }
 
+/* submit button hover effect */
 .feedback-submit-button:hover {
   gap: 20px;
 }
 
+/* form input wrapper */
 .feedback-input-container {
   width: 100%;
   display: flex;
@@ -596,12 +627,14 @@ ul {
   gap: 10px;
 }
 
+/* input label */
 .feedback-input-label {
   font-size: 26px;
   font-weight: 300;
   color: white;
 }
 
+/* form input field */
 .feedback-input {
   -webkit-appearance: none;
   appearance: none;
@@ -616,15 +649,18 @@ ul {
   transition: border-bottom-color 300ms;
 }
 
+/* input focus state */
 .feedback-input:focus {
   border-bottom: 2px solid rgba(255, 255, 255, 1);
   outline: none;
 }
 
+/* input with content */
 .feedback-input:not(:placeholder-shown) {
   border-bottom: 2px solid rgba(255, 255, 255, 1);
 }
 
+/* input placeholder */
 .feedback-input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
