@@ -322,7 +322,7 @@ ul {
 .billy-th {
   border: 1px solid #dddddd;
   text-align: center;
-  padding: 0.9;
+  padding: 0.9px;
   transition: text-shadow 300ms, color 300ms;
   cursor: default;
 }
@@ -725,7 +725,6 @@ ul {
   opacity: 0.75;
   color: #f2e6d8;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
-  transition: opacity 300ms, background-image 300ms;
 }
 
 .Adam_Page2Containers {
@@ -921,6 +920,77 @@ th:nth-child(even) {
   margin-bottom: 10px;
 }
 
+.Adam_FoodTitle {
+  text-align: center;
+  font-size: 155px;
+  margin-bottom: 10px;
+  margin-top: 220px;
+  opacity: 0.75;
+  color: #f2e6d8;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.849);
+}
+
+.Adam_FoodBox {
+  width: 70%;
+  height: 220px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-radius: 0px 30px 30px 0px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  transform: translateX(-45%);
+  transition: transform 0.5s ease;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_FoodBox:hover {
+  transform: translateX(0);
+  box-shadow: 0 0 25px rgb(255, 255, 255), 0 0 60px rgb(206, 122, 53);
+  transform: scale(1);
+}
+
+.Adam_FoodText {
+  color: #f2e6d8;
+  font-size: 26px;
+  font-weight: 400;
+  padding: 40px;
+}
+
+.Adam_BoxImage {
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 400ms ease, box-shadow 400ms ease, transform 400ms ease;
+}
+
+.Adam_FoodImage {
+  margin-bottom: 60px;
+  margin-top: 60px;
+  position: relative;
+  width: 68vw;
+  margin-left: auto;
+  transform: translateX(45%);
+  transition: transform 0.5s ease;
+  display: flex;
+  gap: 32px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 30px 0px 0px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.Adam_FoodImage:hover {
+  transform: translateX(0);
+  box-shadow: 0 0 25px rgb(255, 255, 255), 0 0 60px rgb(206, 122, 53);
+}
+
+.Adam_FoodImage img {
+  height: 192px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 /***************************************** AARON'S SECTION ******************************************/
 /* to put an image in the background*/
 .Aaron-body {
@@ -948,7 +1018,6 @@ th:nth-child(even) {
   cursor: pointer;
   transition: opacity 600ms, background-image 600ms;
   opacity: 0, 5;
-  text-shadow: #333;
 }
 /* this code is for all the title of the code*/
 .Aaron-title {
@@ -1084,7 +1153,9 @@ th:nth-child(even) {
   margin: auto;
 }
 
-/***************************************** MIKOLAJ'S SECTION ******************************************/
+/***************************************** KOWAL MIKOLAJ'S SECTION ******************************************/
+
+/* code for background  */
 #BodyMiko {
   font-family: "Inter", sans-serif;
   font-weight: 100;
@@ -1092,6 +1163,7 @@ th:nth-child(even) {
   color: white;
 }
 
+/* code for my first title and his background */
 #h1Miko {
   margin: 0;
   background-image: url("https://images.unsplash.com/photo-1519197924294-4ba991a11128?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9sYW5kfGVufDB8fDB8fHww");
@@ -1109,13 +1181,17 @@ th:nth-child(even) {
   border-width: 0.2rem;
   border-style: solid;
   border-color: #ffffff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/* code for my second's title */
 .h2Miko {
   text-align: center;
   font-size: 2.5rem;
 }
-.boiteMiko {
+
+/*Code to seperate section of my website and to put item in the middle*/
+.BoxMiko {
   display: flex;
   gap: 2rem;
   padding: 0rem;
@@ -1125,17 +1201,33 @@ th:nth-child(even) {
   justify-content: center;
 }
 
+/*code for my text with a link*/
 .textMikoURL {
   font-size: 1rem;
   font-weight: lighter;
   color: #ffffff;
-  font-family: "GIll Sans" Arial, sans-serif;
   text-align: center;
   width: 25rem;
   height: 25rem;
   font-weight: bolder;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+/*code for the color of my link when he is normal */
+.linkMiko {
+  color: rgb(18, 6, 145);
+}
+
+/*code for the color of my link when he is normal */
+a.linkMiko:active {
+  color: rgb(18, 6, 145);
+}
+
+/*code for the color of my link when clicked */
+a.linkMiko:visited {
+  color: red;
+}
+/*code for my image*/
 .imageMiko {
   display: block;
   border: #ffffff;
@@ -1145,39 +1237,24 @@ th:nth-child(even) {
   border-color: #ffffff;
   border-style: solid;
 }
-
-#listeMiko {
+/* code for my lists*/
+#listMiko {
   display: block;
   text-align: center;
   list-style-type: none;
   text-indent: 2rem;
   font-weight: bolder;
   line-height: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+/*code for my lists*/
 .liMiko {
   margin: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.tableMiko,
-.thMiko,
-.tdMiko,
-.tdMiko1 {
-  border: 0.3rem solid;
-  border-collapse: collapse;
-  padding: 10px;
-  font-weight: lighter;
-  text-align: center;
-}
-.thMiko {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
-.tdMiko1 {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
-
+/*code for my form*/
 .formMiko {
   padding: 0.5rem;
   font-weight: lighter;
@@ -1185,12 +1262,16 @@ th:nth-child(even) {
   border: 0.5rem;
   border-color: white;
   border-style: double;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+/*code for my inputs*/
 .textareaMiko {
   width: 50rem;
   height: 5rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-.imagePologneMiko {
+/*code for my flag of poland*/
+.imagePolandMiko {
   display: block;
   border: #ffffff;
   height: 25rem;
@@ -1199,7 +1280,58 @@ th:nth-child(even) {
   border-color: #ffffff;
   border-style: solid;
 }
-/***************************************** CLIFFORD'S SECTION ******************************************/
+/*code for my text on the flag*/
+.MikotextImage {
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  color: #000000;
+  text-align: center;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  width: 40rem;
+  opacity: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*code for opacity when the mouse is on the flag*/
+.MikotextImage:hover {
+  opacity: 1;
+}
+/*code for my paragraphe under the flag*/
+.PimageMiko {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/*code for my table*/
+.tablesMiko,
+.thMiko,
+.tdMiko,
+.tdMiko1 {
+  border: 0.3rem solid;
+  border-collapse: collapse;
+  padding: 10px;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*code for my title in my table*/
+.thMiko {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/*code for my title in my table*/
+.tdMiko1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+/***************************************** MANU CLIFFORD'S SECTION ******************************************/
 
 /* .main-nav ul {
   list-style: none;
