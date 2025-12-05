@@ -348,7 +348,7 @@ td {
   background-image: url(images/italie/Gonde\ Venise.jpg);
 }
 .Lucas-ListActivity li:nth-child(2):hover {
-  background-image: url(images/italie/Musée\ vatican.jpg);
+  background-image: url(images/italie/MusÃ©e\ vatican.jpg);
 }
 .Lucas-ListActivity li:nth-child(3):hover {
   background-image: url(images/italie/cinque\ terre.jpg);
@@ -363,33 +363,90 @@ td {
   background-image: url(images/italie/Pompei_\ cena\ gourmet\ con\ vista\ sugli\ scavi.jpg);
 }
 .Lucas-FormItalie {
-  width: 400px;
-  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
   text-align: center;
   color: white;
   font-family: "GildaDisplay";
-  justify-content: center;
+  align-items: center;
+  padding: 40px;
 }
 
 .Lucas-SubtitleForm {
-  text-align: center;
-  margin: 30px;
-  font-size: 30px;
+  font-size: 40px;
   letter-spacing: 2px;
+  margin-bottom: 20px;
+  max-width: 250px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1% 2% 1% 2%;
 }
 
 .Lucas-FormContent {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  font-family: "GildaDisplay";
 }
 
 .Lucas-FormContent label {
   font-size: 20px;
   text-transform: uppercase;
-  opacity: 0.7;
+  color: rgb(183, 183, 183);
 }
 
+.Lucas-FormContent input,
+textarea {
+  width: 96%;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.Lucas-FormContent textarea {
+  height: 120px;
+}
+
+.Lucas-FormBtn {
+  width: 150px;
+  height: 70px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 300ms;
+}
+
+.Lucas-FormBtn:hover {
+  width: 200px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px;
+  cursor: pointer;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+  font-size: 20px;
+}
+
+.Lucas-DivForm {
+  border-style: solid;
+  border-width: 1px;
+  width: 600px;
+  padding: 30px;
+}
+
+.Lucas-ItalyMoreInfo {
+  border-style: solid;
+  box-shadow: #d1ecf1;
+  border-width: 1px;
+  margin: 3%;
+  width: 600px;
+  height: 70px;
+  filter: grayscale(0%) drop-shadow(0 0 50px white);
+}
+
+.Lucas-ItalyMoreInfo a {
+  font-size: 40px;
+}
 /***************************************** BILLY'S SECTION ******************************************/
 
 /* content */
