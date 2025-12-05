@@ -855,7 +855,7 @@ th:nth-child(even) {
 }
 
 /***************************************** AARON'S SECTION ******************************************/
-/* to put an image in the background*/
+/* To set an image as a background.*/
 .Aaron-body {
   background-image: url(https://trilliontrees.org/wp-content/uploads/2023/09/1-Djeke-Triangle-%C2%A9-S.Ramsay_WCS.jpg);
   background-position: center;
@@ -863,7 +863,7 @@ th:nth-child(even) {
   background-size: cover;
   background-attachment: fixed;
 }
-/* for texts of the body and a background for them*/
+/* For the body paragraphs and their background.*/
 .Aaron-text {
   background-color: rgba(51, 77, 55, 0.6);
   width: 70%;
@@ -873,7 +873,7 @@ th:nth-child(even) {
   font-size: 18px;
   line-height: 1.6;
 }
-/* its for  all the image of the HTML */
+/* It's for all the images of the code. */
 .Aaron-image {
   display: block;
   margin: 10px auto;
@@ -882,7 +882,7 @@ th:nth-child(even) {
   transition: opacity 600ms, background-image 600ms;
   opacity: 0, 5;
 }
-/* this code is for all the title of the code*/
+/* This block is for all the titles in the code.*/
 .Aaron-title {
   color: rgb(231, 231, 231);
   text-align: center;
@@ -891,7 +891,7 @@ th:nth-child(even) {
   font-style: oblique;
 }
 
-/* this is the main title of the page*/
+/* This is the main title of the page.*/
 .Aaron-maintitle {
   font-size: 100px;
   font-weight: 400;
@@ -905,14 +905,14 @@ th:nth-child(even) {
   cursor: pointer;
 }
 
-/* thats the table of the code*/
+/* That's the table for the code.*/
 .table-Aaron {
   border: 2px solid;
   margin: auto;
   background-color: rgba(51, 77, 55, 0.6);
   border-collapse: collapse;
 }
-/* this is to put the border off the table*/
+/* This is the table borders.*/
 .Aaron-th,
 .Aaron-td {
   border: 1px solid;
@@ -921,7 +921,7 @@ th:nth-child(even) {
 .Aaron-th {
   border: none;
 }
-/* i wanted to align the image in the same line*/
+/* I wanted to align the image on the same line.*/
 .Container-history-aaron {
   background-color: rgba(51, 77, 55, 0.6);
   display: flex;
@@ -932,7 +932,7 @@ th:nth-child(even) {
   gap: 20px;
   border-radius: 15px;
 }
-/*to put the title of the history in the middle of the space*/
+/*To center the history title in the space.*/
 .Aaron-history {
   text-align: center;
   width: 300px;
@@ -940,7 +940,7 @@ th:nth-child(even) {
 .Aaron-contain {
   margin-left: 275px;
 }
-/* i wanted to put this block on the right of the screen */
+/* I wanted to place this block on the right side of the screen.*/
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
@@ -949,13 +949,13 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 20px;
 }
-/* it was to put them on the same lign and to align them*/
+/* It was to put them on the same line and align them.*/
 .Aaron-list,
 .Aaron-history2 {
   display: inline-block;
   vertical-align: top;
 }
-/* this code was to put the block on the left of the screen*/
+/* This code is to place the block on the left side of the screen.*/
 .Aaron-list {
   text-align: center;
   background-color: rgba(51, 77, 55, 0.6);
@@ -966,13 +966,14 @@ th:nth-child(even) {
   margin-right: 2%;
   padding: 20px;
 }
+/*This code is to highlight the link.*/
 .Aaron-link {
   color: white;
   font-size: 20px;
   font-weight: 500;
 }
 
-/* The forms*/
+/* This code is for the forms of the code.*/
 
 .Aaron-forms {
   text-align: center;
@@ -985,7 +986,7 @@ th:nth-child(even) {
   border-radius: 15px;
   padding: 2px 6px;
 }
-/* my buttons and mini questions for the animation*/
+/* My buttons and mini questions are for the animation, it's to make them larger.*/
 .Aaron-radio {
   transform: scale(2);
   margin: 10px;
@@ -1004,7 +1005,7 @@ th:nth-child(even) {
   transition: 600ms;
   font-size: 60px;
 }
-/*the code to add the button submit*/
+/*This code is to stylize my submit button.*/
 .Aaron-button {
   background-color: #00000093;
   color: rgb(255, 255, 255);
