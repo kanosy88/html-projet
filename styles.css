@@ -1464,6 +1464,11 @@ th:nth-child(even) {
   font-size: 40px;
   cursor: pointer;
   font-style: oblique;
+  transition: all 300ms;
+}
+
+.Aaron-title:hover {
+  font-size: 45px;
 }
 
 /* This is the main heading of the page.*/
