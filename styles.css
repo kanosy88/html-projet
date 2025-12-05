@@ -931,7 +931,6 @@ textarea {
 
 /***************************************** ADAM'S SECTION ******************************************/
 
-
 .Adam_Content {
   display: flex;
   flex-direction: column;
@@ -1856,6 +1855,7 @@ a.linkMiko:visited {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
+  color: black;
 }
 
 .country-facts th,
