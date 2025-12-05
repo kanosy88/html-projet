@@ -1450,8 +1450,8 @@ a.linkMiko:visited {
   margin-right: 10px;
   transform: scale(1.2);
 }
-/*
-button[type="submit"] {
+
+.clifford-submit-button {
   background: linear-gradient(135deg, #007a3d 0%, #005a2c 100%);
   color: white;
   padding: 15px 40px;
@@ -1466,12 +1466,11 @@ button[type="submit"] {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-button[type="submit"]:hover {
+.clifford-submit-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   background: linear-gradient(135deg, #005a2c 0%, #004020 100%);
 }
-*/
 
 @media (max-width: 768px) {
   .header-content {
